@@ -26,7 +26,7 @@ We'll be using [Gallium](https://layouts.wiki/guides/start/recommendations/#over
     cd "path/to/kanata-binary"
     ```
     Replace `path/to/kanata-binary` with the path to the binary's folder.
-1. Download the [Gallium config file](gallium.kbd) (`gallium.kbd`).
+1. Download the [Gallium config file](layouts/gallium.kbd) (`gallium.kbd`).
 1. Move `gallium.kbd` to the same folder as the Kanata binary.
 1. Run Kanata with `gallium.kbd` (replace `kanata_binaryvariant` below with the name of your chosen binary):
     - On Windows, run:
@@ -92,6 +92,11 @@ I've tried many of methods described in the discussion, but even the [Registry m
 1. Double click the shortcut when you sign in.
 
 Yes, it's manual, but it reliably lets me immediately start using my alt layout. And it's an easy double click that's just become part of my routine of starting up my computer.
+
+# Other Example Config Files
+
+- [`use-qwerty-while-holding-modifiers.kbd`](layouts/use-qwerty-while-holding-modifiers.kbd)
+  - Makes holding `Control`, `Alt`, or `Super` temporarily switch to QWERTY
 
 # Feedback
 
