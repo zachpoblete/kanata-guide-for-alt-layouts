@@ -10,8 +10,7 @@ Kanata’s syntax is simple, but it can be tricky to set up at first. This guide
 > [!IMPORTANT]
 > This section is up to date with Kanata v1.11.0.
 
-> [!NOTE]
-> The example layout used below is [Gallium](https://layouts.wiki/guides/start/recommendations/#overall-picks). I show how you can change the layout in ["How to edit the Kanata config file"](#how-to-edit-the-kanata-config-file).
+We'll be using [Gallium](https://layouts.wiki/guides/start/recommendations/#overall-picks) as the example layout.
 1. Go to the [latest release](https://github.com/jtroo/kanata/releases/latest) of Kanata, which contains instructions for each OS.
     - On Windows and Linux, just follow this guide which covers most of those instructions.
     - On macOS, open and read the macOS instructions because there are preliminary steps you have to do before you can use Kanata. Specifically, you have to install the Karabiner driver (the exact version of which depends on your version of macOS). After installing the driver, continue following this guide.
@@ -43,7 +42,7 @@ Your keyboard should now be remapped to Gallium, which you can test by typing a 
 
 You can exit Kanata at any time by holding down these three keys together: `Left Control`, `Space`, and `Escape`.
 
-# How to edit the Kanata config file
+# How to edit the Kanata config file / change the layout
 
 `gallium.kbd` consists of two parts, `defsrc` and `deflayer`:
 
