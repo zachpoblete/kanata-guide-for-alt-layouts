@@ -87,7 +87,7 @@ If you want Kanata and your config file to run on startup, see this [Windows](ht
 I've tried many of methods described in the discussion, but even the [Registry method](https://github.com/jtroo/kanata/discussions/193#discussioncomment-9994795) could still take a minute for Kanata to start after signing in. At least on Windows, how fast it takes Kanata to start after signing in depends on your machine and the other processes that run on startup. Here's the fastest and current method I use:
 1. Make a shortcut of the Kanata `.exe`.
 1. Open the shortcut's properties.
-1. Edit the target by appending  `--cfg "path\to\gallium.kbd" --nodelay`; the full target should look like `"path\to\kanata.exe" --cfg "path\to\gallium.kbd" --nodelay`.
+1. Edit the target by appending  `--cfg "path\to\gallium.kbd" --nodelay`; the full target should look like `"path\to\kanata_binaryvariant.exe" --cfg "path\to\gallium.kbd" --nodelay`.
 1. Move the shortcut to the Desktop.
 1. Double click the shortcut when you sign in.
 
