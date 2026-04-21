@@ -97,6 +97,8 @@ Yes, it's manual, but it reliably lets me immediately start using my alt layout.
 
 - [`use-qwerty-while-holding-modifiers.kbd`](layouts/use-qwerty-while-holding-modifiers.kbd)
   - Makes holding `Control`, `Alt`, or `Super` temporarily switch to QWERTY
+- [`graphite.kbd`](layouts/graphite.kbd)
+  - A layout that uses non-standard shift pairs, e.g. typing `Shift + ,` outputs `?`, not `<`
 
 # Feedback
 
