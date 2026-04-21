@@ -100,7 +100,7 @@ Yes, it's manual, but it reliably lets me immediately start using my alt layout.
 
 # Feedback
 
-If anything in this guide is unclear, feel free to open an [issue](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/issues) or message me (@novachromatic) on the [Alt Keyboard Layouts Discord](https://discord.gg/4kVZu7uWdy). Suggestions are appreciated, especially for Linux or macOS, as I only have experience on Windows.
+If anything in this guide is unclear or doesn't work, feel free to open an [issue](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/issues) or message me (@novachromatic) on the [Alt Keyboard Layouts Discord](https://discord.gg/4kVZu7uWdy). Suggestions are appreciated, especially for Linux or macOS, as I only have experience on Windows.
 
 # Further Reading
 
