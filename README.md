@@ -99,6 +99,8 @@ Yes, it's manual, but it reliably lets me immediately start using my alt layout.
   - Makes holding `Control`, `Alt`, or `Super` temporarily switch to QWERTY
 - [`graphite.kbd`](layouts/graphite.kbd)
   - A layout that uses non-standard shift pairs, e.g. typing `Shift + ,` outputs `?`, not `<`
+- [`night.kbd`](layouts/night.kbd)
+  - A [thumb-alpha](https://layouts.wiki/guides/start/recommendations/#thumb-alpha) layout
 
 # Feedback
 

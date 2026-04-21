@@ -1,0 +1,17 @@
+;; Official website: https://valorance.net/night/
+
+;; This config file maps Left Alt to the thumb alpha. The exact key that will be
+;; remapped to the thumb alpha will depend on your keyboard.
+(defsrc
+  q w e r t  y u i o p
+  a s d f g  h j k l ;
+  z x c v b  n m , . /
+        lalt
+)
+
+(deflayer night
+  b f l k q  p g o u .
+  n s h t m  y c a e i
+  x v j d z  ' w ; / ,
+        r
+)
