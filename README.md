@@ -8,7 +8,7 @@ Kanata’s syntax is simple, but it can be tricky to set up at first. This guide
 # How to set up an alternate keyboard layout with Kanata
 
 > [!IMPORTANT]
-> These instructions are up to date with Kanata v1.11.0. The way Kanata formats its releases sometimes changes, so if there's a newer version, some of the steps below might be outdated. But I'll try my best to regularly update the instructions as new Kanata versions get released.
+> This section is up to date with Kanata v1.11.0.
 
 > [!NOTE]
 > The example layout used below is [Gallium](https://layouts.wiki/guides/start/recommendations/#overall-picks). I show how you can change the layout in ["How to edit the Kanata config file"](#how-to-edit-the-kanata-config-file).
