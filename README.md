@@ -11,7 +11,7 @@ Kanata’s syntax is simple, but it can be tricky to set up at first. This guide
 > This section is up to date with Kanata v1.11.0.
 
 We'll be using [Gallium](https://layouts.wiki/guides/start/recommendations/#overall-picks) as the example layout.
-1. Go to the [latest release](https://github.com/jtroo/kanata/releases/latest) of Kanata, which contains instructions for each OS.
+1. Go to the [latest Kanata release](https://github.com/jtroo/kanata/releases/latest), which contains instructions for each OS.
     - On Windows and Linux, just follow this guide which covers most of those instructions.
     - On macOS, open and read the macOS instructions because there are preliminary steps you have to do before you can use Kanata. Specifically, you have to install the Karabiner driver (the exact version of which depends on your version of macOS). After installing the driver, continue following this guide.
 1. Download and extract the `.zip` binaries folder for your system, found at the bottom of the release page in the "Assets" section:
@@ -64,7 +64,7 @@ Notice that the `defsrc` list is just the QWERTY layout while the `deflayer` lis
 - `defsrc` defines the order of keys that the `deflayer` entries will operate on.
 - `deflayer` defines how each physical key mapped in `defsrc` behaves when Kanata runs.
 
-To use a different layout, change the keys and their order in `deflayer` (and optionally the layer name). For example, here is what a config file for the [Sturdy](https://layouts.wiki/guides/start/recommendations/#sturdy) layout would look like:
+To use a different layout, change the keys and their order in `deflayer` (and optionally the layer name). For example, here is what a config file for the [Sturdy layout](https://layouts.wiki/guides/start/recommendations/#sturdy) would look like:
 ```
 (defsrc
   q w e r t  y u i o p
