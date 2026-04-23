@@ -1,6 +1,6 @@
 [Kanata](https://github.com/jtroo/kanata) is a cross-platform keyboard remapper for Windows, Linux, and macOS. It lets you use alternate layouts on any keyboard and supports advanced features like layers, tap-hold, and combos.
 
-Getting Kanata set up can be tricky at first. This guide walks you through the setup process step by step so that you can get your preferred layout up and running.
+Getting Kanata set up can be tricky at first, but this guide walks you through the process step by step so that you can get your preferred layout up and running.
 
 > [!TIP]
 > Consider reading the Layouts Wiki guide on [Using a Custom Layout](https://layouts.wiki/guides/start/software/) to see if Kanata or a different approach fits your needs.
