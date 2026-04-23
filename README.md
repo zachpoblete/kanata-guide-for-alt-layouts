@@ -3,7 +3,7 @@
 Kanata’s syntax is simple, but it can be tricky to set up at first. This guide walks you through the setup process step by step so that you can get your preferred layout up and running.
 
 > [!TIP]
-> Consider reading ["Using a Custom Layout"](https://layouts.wiki/guides/start/software/) from the Layouts Wiki to see if a keyboard remapper like Kanata fits your needs.
+> Consider reading the Layouts Wiki guide on [Using a Custom Layout](https://layouts.wiki/guides/start/software/) to see if Kanata or a different approach fits your needs.
 
 # How to set up an alternate keyboard layout with Kanata
 
