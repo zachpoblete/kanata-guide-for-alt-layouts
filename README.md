@@ -115,7 +115,11 @@ I've tried many of methods described in the discussion, but even the [Registry m
 
 1. Open the shortcut's properties.
 
-1. Edit the target by appending  `--cfg "path\to\gallium.kbd" --nodelay`; the full target should look like `"path\to\kanata_binary.exe" --cfg "path\to\gallium.kbd" --nodelay`.
+1. Edit the target by appending `--cfg "path\to\gallium.kbd" --nodelay`. The full target should look like:
+
+   ```
+   "path\to\kanata_binary.exe" --cfg "path\to\gallium.kbd" --nodelay
+   ```
 
 1. Move the shortcut to the Desktop.
 
