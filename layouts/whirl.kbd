@@ -1,0 +1,26 @@
+;; GitHub repository: https://github.com/Lenchog/Whirl
+
+(defsrc
+  q w e r t  y u i o p
+  a s d f g  h j k l ; '
+  z x c v b  n m , . /
+             ralt
+)
+
+(deflayer whirl
+  q g d f v  z l u o y
+  n s t h m  ' r e a i /
+  b c p w k  x j ; . ,
+             @*
+)
+
+(defalias
+	* (switch
+		((key-history w 1)) h break
+		((key-history y 1)) , break
+		((key-history u 1)) e break
+		((key-history g 1)) s break
+		((key-history ' 1)) m break
+    () rpt break
+  )
+)

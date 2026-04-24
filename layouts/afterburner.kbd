@@ -1,0 +1,129 @@
+;; Blog post: https://blog.simn.me/posts/2025/afterburner/
+
+(defsrc
+        q  w  e  r  t    y  u  i  o  p
+  caps  a  s  d  f  g    h  j  k  l  ;  '
+        z  x  c  v  b    n  m  ,  .  /
+              lalt spc   ralt
+)
+
+(deflayer afterburner
+        j  b  g  d  k    z  c  o  u  ,
+     q  h  n  s  t  m   @# @$  a  e  i  -
+        y  p  f  v  x    '  w  /  ;  .
+                 r  l    spc
+)
+
+(defvar
+  #-defsrc-key h
+  $-defsrc-key j
+)
+
+;; The `#-base` and `$-base` aliases exist to serve the `#` and `$` aliases that
+;; implement the magic and skip magic interactions described in the blog post.
+(defalias
+  #-base (switch
+    (t! magic a 1 o)
+    (t! magic g 1 s)
+    (t! magic h 1 y)
+    (t! magic u 1 e)
+    (t! magic x 1 t)
+    (t! magic y 1 h)
+    () rpt break
+  )
+
+  $-base (switch
+    (t! magic a 2 o)
+    (t! magic b 2 n)
+    (t! magic c 2 rpt)
+    (t! magic d 2 t)
+    (t! magic e 2 rpt)
+    (t! magic f 2 s)
+    (t! magic g 2 s)
+    (t! magic h 2 y)
+    (t! magic i 2 rpt)
+    (t! magic j 2 y)
+    (t! magic k 2 t)
+    (t! magic l 2 r)
+    (t! magic m 2 k)
+    (t! magic n 2 rpt)
+    (t! magic o 2 a)
+    (t! magic p 2 n)
+    (t! magic q 2 e)
+    (t! magic r 2 l)
+    (t! magic s 2 rpt)
+    (t! magic t 2 rpt)
+    (t! magic u 2 e)
+    (t! magic v 2 t)
+    (t! magic w 2 rpt)
+    (t! magic x 2 t)
+    (t! magic y 2 h)
+    (t! magic z 2 rpt)
+    (t! magic , 2 i)
+    (t! magic . 2 i)
+    (t! magic - 2 i)
+    (t! magic / 2 a)
+    (t! magic ; 2 e)
+    (t! magic ' 2 rpt)
+
+    ;; Since there's no built-in skip-repeat action, we can't do "Else
+    ;; skip-repeat". If you want skip-repeat for the rest of the keys on your
+    ;; keyboard, add repeat cases for them following the format above.
+  )
+)
+
+;; The code below implements the magic and skip magic key interactions such as:
+;; - Typing `ru$#` outputs "rule" (using middle finger for `$` to avoid the SFB).
+;; - Typing `is#u$` outputs "issue".
+(defalias
+  # (switch
+      ((input-history real $$-defsrc-key 2)) @$-base break
+      () @#-base break
+  )
+  $ (switch
+      ((input-history real $#-defsrc-key 3)) @#-base break
+      () @$-base break
+  )
+)
+
+;; Here's the naive approach to the magic template:
+#|
+(deftemplate magic (input-key recency output-key)
+  ((key-history $input-key $recency))
+    (if-equal $output-key rpt $input-key)
+    (if-not-equal $output-key rpt $output-key)
+    break
+)
+|#
+;; The problem is that if the key to skip-magic is still down, the skip magic
+;; won't work. For example, following the skip magic rules: typing `no$e` should
+;; output "none", but if the `n` key were still held down while pressing the `$`
+;; key, then the second "n" wouldn't be outputted, and the actual output would
+;; be "noe".
+
+;; The magic template below fixes this by releasing the key to skip-magic if
+;; it's still down. The built-in `rpt` action actually already releases the key to
+;; repeat if it's still down, so we're just doing it manually for skip magic.
+
+(deftemplate magic (input-key recency output-key)
+  ((key-history $input-key $recency))
+    (if-equal $output-key rpt
+      (switch
+        ($input-key) (multi
+          (release-key $input-key)
+          (macro 5 $input-key)  ;; The delay of 5 is needed for this to work properly.
+        ) break
+        () $input-key break
+      )
+    )
+    (if-not-equal $output-key rpt
+      (switch
+        ($output-key) (multi
+          (release-key $output-key)
+          (macro 5 $output-key)
+        ) break
+        () $output-key break
+      )
+    )
+    break
+)

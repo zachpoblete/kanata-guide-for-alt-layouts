@@ -104,6 +104,10 @@ See the [Kanata Configuration Guide](https://jtroo.github.io/config.html) for de
   - A layout that uses non-standard shift pairs (e.g. typing `Shift + ,` outputs `?`, not `<`)
 - [`night.kbd`](layouts/night.kbd)
   - A [thumb-alpha](https://layouts.wiki/guides/start/recommendations/#thumb-alpha) layout
+- [`whirl.kbd`](layouts/whirl.kbd)
+  - A layout that uses a [magic key](https://layouts.wiki/reference/terminology/magic/)
+- [`afterburner.kbd`](layouts/afterburner.kbd)
+  - A layout that uses a skip magic key (a key whose output depends on the second-to-last keystroke)
 
 # How to run Kanata on startup
 
