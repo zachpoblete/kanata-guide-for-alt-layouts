@@ -1,6 +1,6 @@
 [Kanata](https://github.com/jtroo/kanata) is a cross-platform keyboard remapper for Windows, Linux, and macOS. It lets you use alternate layouts on any keyboard and supports advanced features like layers, tap-hold, and combos.
 
-Getting Kanata set up can be tricky at first, but this guide walks you through the process step by step so that you can get your preferred layout up and running.
+Getting Kanata set up can be tricky at first, but this guide walks you through the process so that you can get your preferred layout up and running.
 
 > [!TIP]
 > Consider reading the Layouts Wiki guide on [Using a Custom Layout](https://layouts.wiki/guides/start/software/) to see if Kanata or a different approach fits your needs.
@@ -11,36 +11,50 @@ Getting Kanata set up can be tricky at first, but this guide walks you through t
 > This section is up to date with Kanata v1.11.0.
 
 We'll be using [Gallium](https://layouts.wiki/guides/start/recommendations/#overall-picks) as the example layout.
-1. Go to the [latest Kanata release](https://github.com/jtroo/kanata/releases/latest), which contains instructions for each OS.
-    - On Windows and Linux, just follow this guide which covers most of those instructions.
-    - On macOS, open and read the macOS instructions because there are preliminary steps you have to do before you can use Kanata. Specifically, you have to install the Karabiner driver (the exact version of which depends on your version of macOS). After installing the driver, continue following this guide.
-1. Download and extract the `.zip` binaries folder for your system, found at the bottom of the release page in the "Assets" section:
-    - Select x64 if your machine's CPU is Intel or AMD.
-    - Select arm64 if your machine's CPU is ARM.
-1. Select a Kanata binary variant and move it to its desired location. I recommend the one that is generally the most flexible:
-    - On Windows, use the `gui_winIOv2_cmd_allowed` variant.
-    - On Linux or macOS, use the `cmd_allowed` variant.
-1. Open a terminal for your system.
-1. Change your working directory to the path of your chosen Kanata binary:
+
+1. Go to the [latest Kanata release](https://github.com/jtroo/kanata/releases/latest).
+
+    - Windows/Linux: Follow this guide.
+    - macOS: Read the macOS instructions first, as you'll need the Karabiner driver before proceeding.
+
+1. Download and extract the `.zip` under **Assets**:
+
+    - Intel/AMD CPU: Use `...-x64.zip`
+    - ARM CPU: Use `...-arm64.zip`
+
+1. Choose a binary and move it anywhere you like:
+
+    - **Windows:** Use `kanata_windows_gui_winIOv2_cmd_allowed_...`
+    - **Linux/macOS:** Use `kanata_*_cmd_allowed_...`
+
+1. Open a terminal and go to the folder with the binary:
+
     ```bash
     cd "path/to/kanata-binary"
     ```
-    Replace `path/to/kanata-binary` with the path to the binary's folder.
-1. Download the [Gallium config file](layouts/gallium.kbd) (`gallium.kbd`).
-1. Move `gallium.kbd` to the same folder as the Kanata binary.
-1. Run Kanata with `gallium.kbd` (replace `kanata_binaryvariant` below with the name of your chosen binary):
-    - On Windows, run:
-        ```powershell
-        .\kanata_binaryvariant.exe --cfg gallium.kbd
-        ```
-    - On Linux or macOS, run:
-        ```shell
-        chmod +x kanata_binaryvariant   # may be downloaded without executable permissions
-        sudo ./kanata_binaryvariant --cfg gallium.kbd
-        ```
-Your keyboard should now be remapped to Gallium, which you can test by typing a few letters.
 
-You can exit Kanata at any time by holding down these three keys together: `Left Control`, `Space`, and `Escape`.
+1. Download [`gallium.kbd`](layouts/gallium.kbd) and place it in the same folder.
+
+1. Run Kanata:
+
+   **Windows**
+
+   ```powershell
+   .\kanata_binary.exe --cfg gallium.kbd
+   ```
+
+   **Linux/macOS**
+
+   ```shell
+   chmod +x kanata_binary  # make the file runnable if needed
+   sudo ./kanata_binary --cfg gallium.kbd
+   ```
+
+   Replace `kanata_binary` with the binary's filename (e.g. `kanata_linux_cmd_allowed_x64`).
+
+Your keyboard should now be remapped to Gallium. Try typing a few letters :D
+
+To exit Kanata, hold: `Left Control + Space + Escape`.
 
 # How to edit the Kanata config file / change the layout
 
