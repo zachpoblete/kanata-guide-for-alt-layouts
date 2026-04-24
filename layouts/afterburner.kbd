@@ -73,8 +73,8 @@
 )
 
 ;; The code below implements the magic and skip magic key interactions such as:
-;; - Typing `ru$#` outputs "rule" (using middle finger for `$` to avoid the SFB).
-;; - Typing `is#u$` outputs "issue".
+;; - Typing `ru$#` outputs "rule" (using middle finger for `$` to avoid the SFB)
+;; - Typing `is#u$` outputs "issue"
 (defalias
   # (switch
       ((input-history real $$-defsrc-key 2)) @$-base break

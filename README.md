@@ -74,7 +74,8 @@ To exit Kanata, hold: `Left Control + Space + Escape`.
 )
 ```
 
-The `defsrc` list is just the QWERTY layout while the `deflayer` list is the Gallium layout:
+The `defsrc` list is just the QWERTY layout while the `deflayer` list is the Gallium layout.
+
 - `defsrc` defines the order of keys that the `deflayer` entries will operate on.
 - `deflayer` defines how each physical key mapped in `defsrc` behaves when Kanata runs.
 
@@ -94,9 +95,10 @@ To use a different layout, change the keys and their order in `deflayer` (and op
 )
 ```
 
-# Other example config files
+> [!TIP]
+> See the [Kanata Configuration Guide](https://jtroo.github.io/config.html) for details on its many capabilities.
 
-See the [Kanata Configuration Guide](https://jtroo.github.io/config.html) for details on its capabilities.
+# Other example config files
 
 - [`gallium-with-qwerty-shortcuts.kbd`](layouts/gallium-with-qwerty-shortcuts.kbd)
   - Makes holding `Control`, `Alt`, or `Super` temporarily switch to QWERTY
@@ -129,7 +131,7 @@ I've tried many of methods described in the discussion, but even the [Registry m
 
 1. Double click the shortcut when you sign in.
 
-Yes, it's manual, but it reliably lets me immediately start using my alt layout. And it's an easy double click that's just become part of my routine of starting up my computer.
+Yes, it's manual, but it reliably lets me use my alt layout immediately. And it's an easy double click that's just become part of my routine of starting up my computer.
 
 # Feedback
 
