@@ -74,11 +74,12 @@ To exit Kanata, hold: `Left Control + Space + Escape`.
 )
 ```
 
-Notice that the `defsrc` list is just the QWERTY layout while the `deflayer` list is the Gallium layout:
+The `defsrc` list is just the QWERTY layout while the `deflayer` list is the Gallium layout:
 - `defsrc` defines the order of keys that the `deflayer` entries will operate on.
 - `deflayer` defines how each physical key mapped in `defsrc` behaves when Kanata runs.
 
 To use a different layout, change the keys and their order in `deflayer` (and optionally the layer name). For example, here is what a config file for the [Sturdy layout](https://layouts.wiki/guides/start/recommendations/#sturdy) would look like:
+
 ```
 (defsrc
   q w e r t  y u i o p
@@ -93,21 +94,9 @@ To use a different layout, change the keys and their order in `deflayer` (and op
 )
 ```
 
-See the [Kanata Configuration Guide](https://jtroo.github.io/config.html) for documentation of Kanata's many other capabilities.
+# Other example config files
 
-# How to run Kanata on startup
-If you want Kanata and your config file to run on startup, see this [Windows](https://github.com/jtroo/kanata/discussions/193) discussion, this [Linux](https://github.com/jtroo/kanata/discussions/130#discussioncomment-10227272) discussion (reply in thread), and this [macOS](https://github.com/jtroo/kanata/discussions/1537) discussion. The rest of this section details how I start Kanata on Windows.
-
-I've tried many of methods described in the discussion, but even the [Registry method](https://github.com/jtroo/kanata/discussions/193#discussioncomment-9994795) could still take a minute for Kanata to start after signing in. At least on Windows, how fast it takes Kanata to start after signing in depends on your machine and the other processes that run on startup. Here's the fastest and current method I use:
-1. Make a shortcut of the Kanata `.exe`.
-1. Open the shortcut's properties.
-1. Edit the target by appending  `--cfg "path\to\gallium.kbd" --nodelay`; the full target should look like `"path\to\kanata_binaryvariant.exe" --cfg "path\to\gallium.kbd" --nodelay`.
-1. Move the shortcut to the Desktop.
-1. Double click the shortcut when you sign in.
-
-Yes, it's manual, but it reliably lets me immediately start using my alt layout. And it's an easy double click that's just become part of my routine of starting up my computer.
-
-# Other Example Config Files
+See the [Kanata Configuration Guide](https://jtroo.github.io/config.html) for the documentation of its many capabilities.
 
 - [`use-qwerty-while-holding-modifiers.kbd`](layouts/use-qwerty-while-holding-modifiers.kbd)
   - Makes holding `Control`, `Alt`, or `Super` temporarily switch to QWERTY
@@ -116,11 +105,29 @@ Yes, it's manual, but it reliably lets me immediately start using my alt layout.
 - [`night.kbd`](layouts/night.kbd)
   - A [thumb-alpha](https://layouts.wiki/guides/start/recommendations/#thumb-alpha) layout
 
+# How to run Kanata on startup
+
+If you want Kanata and your config file to run on startup, see this [Windows](https://github.com/jtroo/kanata/discussions/193) discussion, this [Linux](https://github.com/jtroo/kanata/discussions/130#discussioncomment-10227272) discussion (reply in thread), and this [macOS](https://github.com/jtroo/kanata/discussions/1537) discussion. The rest of this section details how I start Kanata on Windows.
+
+I've tried many of methods described in the discussion, but even the [Registry method](https://github.com/jtroo/kanata/discussions/193#discussioncomment-9994795) could still take a minute for Kanata to start after signing in. At least on Windows, how fast it takes Kanata to start after signing in depends on your machine and the other processes that run on startup. Here's the fastest and current method I use:
+
+1. Make a shortcut of the Kanata `.exe`.
+
+1. Open the shortcut's properties.
+
+1. Edit the target by appending  `--cfg "path\to\gallium.kbd" --nodelay`; the full target should look like `"path\to\kanata_binary.exe" --cfg "path\to\gallium.kbd" --nodelay`.
+
+1. Move the shortcut to the Desktop.
+
+1. Double click the shortcut when you sign in.
+
+Yes, it's manual, but it reliably lets me immediately start using my alt layout. And it's an easy double click that's just become part of my routine of starting up my computer.
+
 # Feedback
 
 If anything in this guide is unclear or doesn't work, feel free to open an [issue](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/issues) or message me (@novachromatic) on the [Alt Keyboard Layouts Discord](https://discord.gg/4kVZu7uWdy). Suggestions are appreciated, especially for Linux or macOS, as I only have experience on Windows.
 
-# Further Reading
+# Further reading
 
 If there are specific things you want to do with Kanata, here are some links to point you in the right direction:
 - [Windows only: enable in elevated windows](https://jtroo.github.io/config.html#windows-only-work-elevated)
