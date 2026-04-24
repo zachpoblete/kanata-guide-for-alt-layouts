@@ -96,12 +96,12 @@ To use a different layout, change the keys and their order in `deflayer` (and op
 
 # Other example config files
 
-See the [Kanata Configuration Guide](https://jtroo.github.io/config.html) for the documentation of its many capabilities.
+See the [Kanata Configuration Guide](https://jtroo.github.io/config.html) for details on its capabilities.
 
-- [`use-qwerty-while-holding-modifiers.kbd`](layouts/use-qwerty-while-holding-modifiers.kbd)
+- [`gallium-with-qwerty-shortcuts.kbd`](layouts/gallium-with-qwerty-shortcuts.kbd)
   - Makes holding `Control`, `Alt`, or `Super` temporarily switch to QWERTY
 - [`graphite.kbd`](layouts/graphite.kbd)
-  - A layout that uses non-standard shift pairs, e.g. typing `Shift + ,` outputs `?`, not `<`
+  - A layout that uses non-standard shift pairs (e.g. typing `Shift + ,` outputs `?`, not `<`)
 - [`night.kbd`](layouts/night.kbd)
   - A [thumb-alpha](https://layouts.wiki/guides/start/recommendations/#thumb-alpha) layout
 
