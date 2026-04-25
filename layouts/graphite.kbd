@@ -12,13 +12,13 @@
   @lsft q x m c v  k p . - / @rsft
 )
 
-(deflayer graphite-shift
+(deflayer graphite-sft
         _ _ _ _ _  - _ _ _ _ _ _
         _ _ _ _ _  _ _ _ _ _ /
       _ _ _ _ _ _  _ _ _ ' , _
 )
 
 (defalias
-  lsft (multi lsft (layer-while-held graphite-shift))
-  rsft (multi rsft (layer-while-held graphite-shift))
+  lsft (multi lsft (layer-while-held graphite-sft))
+  rsft (multi rsft (layer-while-held graphite-sft))
 )
