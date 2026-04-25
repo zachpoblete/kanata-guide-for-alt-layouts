@@ -131,7 +131,7 @@ I've tried many methods from the discussion, but even the [Registry method](http
 
 1. Double click the shortcut when signing in.
 
-It's manual, but it reliably lets me use my alt layout immediately — and the double click has just become part of my startup routine.
+It's manual, but it reliably lets me use my alt layout immediately — and the double click has become part of my startup routine.
 
 # Feedback
 
