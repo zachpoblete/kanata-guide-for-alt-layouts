@@ -113,15 +113,15 @@ To use a different layout, change the keys and their order in `deflayer` (and op
 
 # Run Kanata on startup
 
-If you want Kanata and your config to run on startup, see this [Windows](https://github.com/jtroo/kanata/discussions/193) discussion, this [Linux](https://github.com/jtroo/kanata/discussions/130#discussioncomment-10227272) discussion (reply in thread), and this [macOS](https://github.com/jtroo/kanata/discussions/1537) discussion. The rest of this section details how I start Kanata on Windows.
+If you want Kanata and your config to run on startup, see this [Windows](https://github.com/jtroo/kanata/discussions/193) discussion, this [Linux](https://github.com/jtroo/kanata/discussions/130#discussioncomment-10227272) discussion (reply in thread), and this [macOS](https://github.com/jtroo/kanata/discussions/1537) discussion. What follows is my current Windows approach.
 
-I've tried many of methods described in the discussion, but even the [Registry method](https://github.com/jtroo/kanata/discussions/193#discussioncomment-9994795) could still take a minute for Kanata to start after signing in. At least on Windows, how fast it takes Kanata to start after signing in depends on your machine and the other processes that run on startup. Here's the fastest and current method I use:
+I've tried many methods from the discussion, but even the [Registry method](https://github.com/jtroo/kanata/discussions/193#discussioncomment-9994795) could still take a minute after signing in. Here's the fastest method I've found:
 
 1. Make a shortcut of the Kanata `.exe`.
 
 1. Open the shortcut's properties.
 
-1. Edit the target by appending `--cfg "path\to\gallium.kbd" --nodelay`. The full target should look like:
+1. Edit the **Target** by appending `--cfg "path\to\gallium.kbd" --nodelay`. The full target should look like:
 
    ```
    "path\to\kanata_binary.exe" --cfg "path\to\gallium.kbd" --nodelay
@@ -129,9 +129,9 @@ I've tried many of methods described in the discussion, but even the [Registry m
 
 1. Move the shortcut to the Desktop.
 
-1. Double click the shortcut when you sign in.
+1. Double click the shortcut when signing in.
 
-Yes, it's manual, but it reliably lets me use my alt layout immediately. And it's an easy double click that's just become part of my routine of starting up my computer.
+It's manual, but it reliably lets me use my alt layout immediately — and the double click has just become part of my startup routine.
 
 # Feedback
 
