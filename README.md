@@ -46,7 +46,7 @@ We'll be using [Gallium](https://layouts.wiki/guides/start/recommendations/#over
    **Linux/macOS**
 
    ```shell
-   chmod +x kanata_binary  # make the file runnable if needed
+   chmod +x kanata_binary  # make the binary runnable if needed
    sudo ./kanata_binary --cfg gallium.kbd
    ```
 
