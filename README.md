@@ -22,10 +22,10 @@ We'll be using [Gallium](https://layouts.wiki/guides/start/recommendations/#over
     - Intel/AMD CPU: Use `...-x64.zip`
     - ARM CPU: Use `...-arm64.zip`
 
-1. Choose a binary and move it anywhere you like:
+1. Choose a binary and rename it:
 
-    - **Windows:** Use `kanata_windows_gui_winIOv2_cmd_allowed_...`
-    - **Linux/macOS:** Use `kanata_*_cmd_allowed_...`
+    - **Windows:** Use `kanata_windows_gui_winIOv2_cmd_allowed_...` and rename it to `kanata.exe`
+    - **Linux/macOS:** Use `kanata_*_cmd_allowed_...` and rename it to `kanata`
 
 1. Open a terminal and go to the folder with the binary:
 
@@ -40,17 +40,15 @@ We'll be using [Gallium](https://layouts.wiki/guides/start/recommendations/#over
    **Windows**
 
    ```powershell
-   .\kanata_binary.exe --cfg gallium.kbd
+   .\kanata.exe --cfg gallium.kbd
    ```
 
    **Linux/macOS**
 
    ```shell
-   chmod +x kanata_binary  # make the binary runnable if needed
-   sudo ./kanata_binary --cfg gallium.kbd
+   chmod +x kanata  # make the binary runnable if needed
+   sudo ./kanata --cfg gallium.kbd
    ```
-
-   Replace `kanata_binary` with the binary's filename (e.g. `kanata_linux_cmd_allowed_x64`).
 
 Your keyboard should now be remapped to Gallium. Try typing a few letters :D
 
@@ -124,7 +122,7 @@ I've tried many methods from the discussion, but even the [Registry method](http
 1. Edit the **Target** by appending `--cfg "path\to\gallium.kbd" --nodelay`. The full target should look like:
 
    ```
-   "path\to\kanata_binary.exe" --cfg "path\to\gallium.kbd" --nodelay
+   "path\to\kanata.exe" --cfg "path\to\gallium.kbd" --nodelay
    ```
 
 1. Move the shortcut to the Desktop.
