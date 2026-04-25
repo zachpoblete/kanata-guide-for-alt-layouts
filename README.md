@@ -79,7 +79,7 @@ The `defsrc` list is just the QWERTY layout while the `deflayer` list is the Gal
 - `defsrc` defines the order of keys that the `deflayer` entries will operate on.
 - `deflayer` defines how each physical key mapped in `defsrc` behaves when Kanata runs.
 
-To use a different layout, change the keys and their order in `deflayer` (and optionally the layer name). For example, here is what a config file for the [Sturdy layout](https://layouts.wiki/guides/start/recommendations/#sturdy) would look like:
+To use a different layout, change the keys and their order in `deflayer` (and optionally the layer name). For example, here is what a config for the [Sturdy layout](https://layouts.wiki/guides/start/recommendations/#sturdy) would look like:
 
 ```
 (defsrc
@@ -113,7 +113,7 @@ To use a different layout, change the keys and their order in `deflayer` (and op
 
 # Run Kanata on startup
 
-If you want Kanata and your config file to run on startup, see this [Windows](https://github.com/jtroo/kanata/discussions/193) discussion, this [Linux](https://github.com/jtroo/kanata/discussions/130#discussioncomment-10227272) discussion (reply in thread), and this [macOS](https://github.com/jtroo/kanata/discussions/1537) discussion. The rest of this section details how I start Kanata on Windows.
+If you want Kanata and your config to run on startup, see this [Windows](https://github.com/jtroo/kanata/discussions/193) discussion, this [Linux](https://github.com/jtroo/kanata/discussions/130#discussioncomment-10227272) discussion (reply in thread), and this [macOS](https://github.com/jtroo/kanata/discussions/1537) discussion. The rest of this section details how I start Kanata on Windows.
 
 I've tried many of methods described in the discussion, but even the [Registry method](https://github.com/jtroo/kanata/discussions/193#discussioncomment-9994795) could still take a minute for Kanata to start after signing in. At least on Windows, how fast it takes Kanata to start after signing in depends on your machine and the other processes that run on startup. Here's the fastest and current method I use:
 
