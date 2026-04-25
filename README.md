@@ -79,7 +79,7 @@ The `defsrc` list is just the QWERTY layout while the `deflayer` list is the Gal
 - `defsrc` defines the order of keys that the `deflayer` entries will operate on.
 - `deflayer` defines how each physical key mapped in `defsrc` behaves when Kanata runs.
 
-To use a different layout, change the keys and their order in `deflayer` (and optionally the layer name). For example, here is what a config for the [Sturdy layout](https://layouts.wiki/guides/start/recommendations/#sturdy) would look like:
+To use a different layout, change the keys and their order in `deflayer` (and optionally rename the layer). For example, here is a config for the [Sturdy layout](https://layouts.wiki/guides/start/recommendations/#sturdy):
 
 ```
 (defsrc
