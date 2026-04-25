@@ -5,7 +5,7 @@ Getting Kanata set up can be tricky at first, but this guide walks you through t
 > [!TIP]
 > Consider reading the Layouts Wiki guide on [Using a Custom Layout](https://layouts.wiki/guides/start/software/) to see if Kanata or a different approach fits your needs.
 
-# How to set up an alternate keyboard layout with Kanata
+# Set up an alternate keyboard layout with Kanata
 
 > [!IMPORTANT]
 > This section is up to date with Kanata v1.11.0.
@@ -56,7 +56,7 @@ Your keyboard should now be remapped to Gallium. Try typing a few letters :D
 
 To exit Kanata, hold: `Left Control + Space + Escape`.
 
-# How to edit the Kanata config file / change the layout
+# Change the layout
 
 `gallium.kbd` consists of two parts, `defsrc` and `deflayer`:
 
@@ -98,7 +98,7 @@ To use a different layout, change the keys and their order in `deflayer` (and op
 > [!TIP]
 > See the [Kanata Configuration Guide](https://jtroo.github.io/config.html) for details on its many capabilities.
 
-# Other example config files
+# Other example configs
 
 - [`gallium-with-qwerty-shortcuts.kbd`](layouts/gallium-with-qwerty-shortcuts.kbd)
   - Makes holding `Control`, `Alt`, or `Super` temporarily switch to QWERTY
@@ -111,7 +111,7 @@ To use a different layout, change the keys and their order in `deflayer` (and op
 - [`afterburner.kbd`](layouts/afterburner.kbd)
   - A layout that uses a skip magic key (a key whose output depends on the second-to-last keystroke)
 
-# How to run Kanata on startup
+# Run Kanata on startup
 
 If you want Kanata and your config file to run on startup, see this [Windows](https://github.com/jtroo/kanata/discussions/193) discussion, this [Linux](https://github.com/jtroo/kanata/discussions/130#discussioncomment-10227272) discussion (reply in thread), and this [macOS](https://github.com/jtroo/kanata/discussions/1537) discussion. The rest of this section details how I start Kanata on Windows.
 
