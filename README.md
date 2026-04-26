@@ -6,10 +6,15 @@ Getting Kanata set up can be tricky at first, but this guide walks you through t
 
 1. Download [Kanata](https://github.com/jtroo/kanata/releases/latest):
 
-    - **Windows:** Most people should download `...-x64.zip`. If you use ARM-based Windows, download `...-arm64.zip`.
-    - **Linux:** Download `linux-binaries-x64.zip`.
-    - **macOS:** Most people should download `...-arm64.zip`. If you use an Intel Mac, download `...-x64.zip`.
+    - **Windows**
+        - Most people should download `...-x64.zip`.
+        - If you use ARM-based Windows, download `...-arm64.zip`.
+    - **Linux**
+        - Download `linux-binaries-x64.zip`.
+    - **macOS**
         - **Read the macOS instructions on that page**, as you'll need the Karabiner driver before using Kanata.
+        - Most people should download `...-arm64.zip`.
+        - If you use an Intel Mac, download `...-x64.zip`.
 
 1. Unzip the folder and rename the executable we'll be using:
 
