@@ -91,7 +91,7 @@ You're using the [Sturdy layout](https://layouts.wiki/guides/start/recommendatio
 
 Changing your layout is just a matter of editing the keys in `deflayer` (and renaming the layer to match).
 
-If you haven't already, check out the [most recommended layouts](https://layouts.wiki/guides/start/recommendations/)!
+If you haven't already, check out the [most recommended layouts](https://layouts.wiki/guides/start/recommendations/).
 
 # Other example configs
 
@@ -131,7 +131,7 @@ This is a manual method for Windows, but it reliably lets you use your alt layou
 
 # Feedback
 
-If anything in this guide is unclear or doesn't work, please open an [issue](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/issues) or message me (@novachromatic) on the [Alt Keyboard Layouts Discord](https://discord.gg/4kVZu7uWdy). Suggestions also appreciated!
+If anything in this guide is unclear or doesn't work, please open an [issue](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/issues) or message me (@novachromatic) on the [Alt Keyboard Layouts Discord](https://discord.gg/4kVZu7uWdy). Suggestions also appreciated.
 
 # Additional links
 
