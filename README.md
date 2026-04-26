@@ -89,14 +89,14 @@ Replace the contents of `example.kbd` with this, then run Kanata again:
 
 You're using the [Sturdy layout](https://layouts.wiki/guides/start/recommendations/#sturdy). Press `Q` on your keyboard&thinsp;—&thinsp;you’ll now get `V`.
 
-Using a different layout is just a matter of editing the keys in `deflayer` (and renaming the layer to match).
+Changing your layout is just a matter of editing the keys in `deflayer` (and renaming the layer to match).
 
 If you haven't already, check out the [most recommended layouts](https://layouts.wiki/guides/start/recommendations/)!
 
 # Other example configs
 
 > [!TIP]
-> Want to know more about a Kanata feature used below? See the [Configuration Guide](https://jtroo.github.io/config.html).
+> Learn more about any Kanata feature used below in the [Configuration Guide](https://jtroo.github.io/config.html).
 
 - [`gallium-with-qwerty-shortcuts.kbd`](layouts/gallium-with-qwerty-shortcuts.kbd)
     - Makes holding `Control`, `Alt`, or `Super` temporarily switch to QWERTY
