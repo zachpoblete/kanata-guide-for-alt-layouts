@@ -1,62 +1,51 @@
-[Kanata](https://github.com/jtroo/kanata) is a keyboard remapper for Windows, Linux, and macOS. It lets you use alternate layouts on any keyboard and supports advanced features like layers, tap-hold, and combos.
+Kanata is a keyboard remapper for Windows, Linux, and macOS. It lets you use alternate layouts on any keyboard and supports advanced features like layers, tap-hold, and combos.
 
-Getting Kanata set up can be tricky at first, but this guide walks you through the process so that you can get your preferred layout up and running.
+Getting Kanata set up can be tricky at first, but this guide walks you through the process of getting your preferred layout up and running.
 
-> [!TIP]
-> Consider reading the Layouts Wiki guide on [Using a Custom Layout](https://layouts.wiki/guides/start/software/) to see if Kanata or a different approach fits your needs.
+# Set up a layout with Kanata
 
-# Set up an alternate keyboard layout with Kanata
+1. Download [Kanata](https://github.com/jtroo/kanata/releases/latest):
 
-> [!IMPORTANT]
-> This section is up to date with Kanata v1.11.0.
+    - **Windows:** Most people should download `...-x64.zip`. If you use ARM-based Windows, download `...-arm64.zip`.
+    - **Linux:** Download `linux-binaries-x64.zip`.
+    - **macOS:** Most people should download `...-arm64.zip`. If you use an Intel Mac, download `...-x64.zip`.
+        - **Read the macOS instructions on that page**, as you'll need the Karabiner driver before using Kanata.
 
-We'll be using [Gallium](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite) as the example layout.
+1. Unzip the folder and rename the executable we'll be using:
 
-1. Go to the [latest Kanata release](https://github.com/jtroo/kanata/releases/latest).
+    - **Windows:** Rename `kanata_windows_gui_winIOv2_cmd_allowed_...` to `kanata.exe`.
+    - **Linux/macOS:** Rename `kanata_*_cmd_allowed_...` to `kanata`.
 
-    - Windows/Linux: Follow this guide.
-    - macOS: Read the macOS instructions first, as you'll need the Karabiner driver before proceeding.
+1. Download [`example.kbd`](layouts/example.kbd) and put it in the same folder as the executable.
 
-1. Download and extract the `.zip` under **Assets**:
-
-    - Intel/AMD CPU: Use `...-x64.zip`
-    - ARM CPU: Use `...-arm64.zip`
-
-1. Choose a binary and rename it:
-
-    - **Windows:** Use `kanata_windows_gui_winIOv2_cmd_allowed_...` and rename it to `kanata.exe`
-    - **Linux/macOS:** Use `kanata_*_cmd_allowed_...` and rename it to `kanata`
-
-1. Open a terminal and go to the folder with the binary:
+1. Open a terminal and go to the folder:
 
     ```bash
-    cd "path/to/kanata-binary"
+    cd "path/to/kanata"
     ```
-
-1. Download [`gallium.kbd`](layouts/gallium.kbd) and place it in the same folder.
 
 1. Run Kanata:
 
-   **Windows**
+    **Windows**
 
-   ```powershell
-   .\kanata.exe --cfg gallium.kbd
-   ```
+    ```powershell
+    .\kanata.exe --cfg example.kbd
+    ```
 
-   **Linux/macOS**
+    **Linux/macOS**
 
-   ```shell
-   chmod +x kanata  # make the binary runnable if needed
-   sudo ./kanata --cfg gallium.kbd
-   ```
+    ```shell
+    chmod +x kanata  # make Kanata runnable if needed
+    sudo ./kanata --cfg example.kbd
+    ```
 
-Your keyboard should now be remapped to Gallium. Try typing a few letters!
+Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Type a few letters!
 
-To exit Kanata, hold: `Left Control + Space + Escape`.
+Stop Kanata by holding: `Left Control + Space + Escape`.
 
 # Change the layout
 
-`gallium.kbd` consists of two parts, `defsrc` and `deflayer`:
+`example.kbd` consists of two parts, `defsrc` and `deflayer`:
 
 ```
 (defsrc
@@ -72,12 +61,12 @@ To exit Kanata, hold: `Left Control + Space + Escape`.
 )
 ```
 
-The `defsrc` list is just the QWERTY layout while the `deflayer` list is the Gallium layout.
+- `defsrc` is your keyboard's original layout (QWERTY).
+- `deflayer` remaps it to Gallium.
 
-- `defsrc` defines the order of keys that the `deflayer` entries will operate on.
-- `deflayer` defines how each physical key mapped in `defsrc` behaves when Kanata runs.
+Kanata works by mapping keys from `defsrc` to `deflayer` position-by-position.
 
-To use a different layout, change the keys and their order in `deflayer` (and rename the layer to match). Here is a config for the [Sturdy layout](https://layouts.wiki/guides/start/recommendations/#sturdy):
+Replace the contents of `example.kbd` with this, then run Kanata again:
 
 ```
 (defsrc
@@ -93,51 +82,54 @@ To use a different layout, change the keys and their order in `deflayer` (and re
 )
 ```
 
-> [!TIP]
-> See the [Kanata Configuration Guide](https://jtroo.github.io/config.html) for details on its many capabilities.
+You're using the [Sturdy layout](https://layouts.wiki/guides/start/recommendations/#sturdy). Press `Q` on your keyboard&thinsp;—&thinsp;you’ll now get `V`.
+
+Using a different layout is just a matter of editing the keys in `deflayer` (and renaming the layer to match).
+
+If you haven't already, check out the [most recommended layouts](https://layouts.wiki/guides/start/recommendations/)!
 
 # Other example configs
 
+> [!TIP]
+> Want to know more about a Kanata feature used below? See the [Configuration Guide](https://jtroo.github.io/config.html).
+
 - [`gallium-with-qwerty-shortcuts.kbd`](layouts/gallium-with-qwerty-shortcuts.kbd)
-  - Makes holding `Control`, `Alt`, or `Super` temporarily switch to QWERTY
+    - Makes holding `Control`, `Alt`, or `Super` temporarily switch to QWERTY
 - [`graphite.kbd`](layouts/graphite.kbd)
-  - A layout that uses non-standard shift pairs (e.g. typing `Shift + ,` outputs `?`, not `<`)
+    - A layout that uses non-standard shift pairs (e.g. typing `Shift + ,` outputs `?`, not `<`)
 - [`night.kbd`](layouts/night.kbd)
-  - A [thumb-alpha](https://layouts.wiki/guides/start/recommendations/#thumb-alpha) layout
+    - A [thumb-alpha](https://layouts.wiki/guides/start/recommendations/#thumb-alpha) layout
 - [`whirl.kbd`](layouts/whirl.kbd)
-  - A layout that uses a [magic key](https://layouts.wiki/reference/terminology/magic/)
+    - A layout that uses a [magic key](https://layouts.wiki/reference/terminology/magic/)
 - [`afterburner.kbd`](layouts/afterburner.kbd)
-  - A layout that uses a skip magic key (a key whose output depends on the second-to-last keystroke)
+    - A layout that uses a skip magic key
 
 # Run Kanata on startup
 
-If you want Kanata and your config to run on startup, see this [Windows](https://github.com/jtroo/kanata/discussions/193) discussion, this [Linux](https://github.com/jtroo/kanata/discussions/130#discussioncomment-10227272) discussion (reply in thread), and this [macOS](https://github.com/jtroo/kanata/discussions/1537) discussion. What follows is my current Windows approach.
+For running Kanata on startup, there are discussions for [Windows](https://github.com/jtroo/kanata/discussions/193), [Linux](https://github.com/jtroo/kanata/discussions/130#discussioncomment-10227272) (reply in thread), and [macOS](https://github.com/jtroo/kanata/discussions/1537).
 
-<!-- TODO: Hmm, this doesn't sound right: "even the [Registry method](https://github.com/jtroo/kanata/discussions/193#discussioncomment-9994795) could still take a minute after signing in" -->
-I've tried many methods from the discussion, but even the [Registry method](https://github.com/jtroo/kanata/discussions/193#discussioncomment-9994795) could still take a minute after signing in. Here's the fastest method I've found:
+This is a manual method for Windows, but it reliably lets you use your alt layout immediately after signing in:
 
-1. Make a shortcut of the Kanata `.exe`.
+1. Make a shortcut of `kanata.exe`.
 
 1. Open the shortcut's properties.
 
 1. Edit the **Target** by appending `--cfg "path\to\gallium.kbd" --nodelay`. The full target should look like:
 
-   ```
-   "path\to\kanata.exe" --cfg "path\to\gallium.kbd" --nodelay
-   ```
+    ```
+    "path\to\kanata.exe" --cfg "path\to\gallium.kbd" --nodelay
+    ```
 
 1. Move the shortcut to the Desktop.
 
 1. Double click the shortcut after signing in.
 
-It's manual, but it reliably lets me use my alt layout immediately — and the double click has become part of my startup routine.
-
 # Feedback
 
-If anything in this guide is unclear or doesn't work, please open an [issue](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/issues) or message me (@novachromatic) on the [Alt Keyboard Layouts Discord](https://discord.gg/4kVZu7uWdy).
+If anything in this guide is unclear or doesn't work, please open an [issue](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/issues) or message me (@novachromatic) on the [Alt Keyboard Layouts Discord](https://discord.gg/4kVZu7uWdy). Suggestions also appreciated!
 
-# Further reading
+# Additional links
 
-If there are specific things you want to do with Kanata, here are some links to point you in the right direction:
-
+- [vscode-kanata](https://github.com/rszyma/vscode-kanata)
+    - A VS Code extension that adds language support for Kanata config files
 - [Windows only: enable in elevated windows](https://jtroo.github.io/config.html#windows-only-work-elevated)
