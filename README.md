@@ -50,7 +50,7 @@ We'll be using [Gallium](https://layouts.wiki/guides/start/recommendations/#gall
    sudo ./kanata --cfg gallium.kbd
    ```
 
-Your keyboard should now be remapped to Gallium. Try typing a few letters :D
+Your keyboard should now be remapped to Gallium. Try typing a few letters!
 
 To exit Kanata, hold: `Left Control + Space + Escape`.
 
