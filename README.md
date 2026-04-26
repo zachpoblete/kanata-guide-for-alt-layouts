@@ -10,7 +10,7 @@ Getting Kanata set up can be tricky at first, but this guide walks you through t
 > [!IMPORTANT]
 > This section is up to date with Kanata v1.11.0.
 
-We'll be using [Gallium](https://layouts.wiki/guides/start/recommendations/#overall-picks) as the example layout.
+We'll be using [Gallium](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite) as the example layout.
 
 1. Go to the [latest Kanata release](https://github.com/jtroo/kanata/releases/latest).
 
@@ -113,6 +113,7 @@ To use a different layout, change the keys and their order in `deflayer` (and re
 
 If you want Kanata and your config to run on startup, see this [Windows](https://github.com/jtroo/kanata/discussions/193) discussion, this [Linux](https://github.com/jtroo/kanata/discussions/130#discussioncomment-10227272) discussion (reply in thread), and this [macOS](https://github.com/jtroo/kanata/discussions/1537) discussion. What follows is my current Windows approach.
 
+<!-- TODO: Hmm, this doesn't sound right: "even the [Registry method](https://github.com/jtroo/kanata/discussions/193#discussioncomment-9994795) could still take a minute after signing in" -->
 I've tried many methods from the discussion, but even the [Registry method](https://github.com/jtroo/kanata/discussions/193#discussioncomment-9994795) could still take a minute after signing in. Here's the fastest method I've found:
 
 1. Make a shortcut of the Kanata `.exe`.
@@ -127,7 +128,7 @@ I've tried many methods from the discussion, but even the [Registry method](http
 
 1. Move the shortcut to the Desktop.
 
-1. Double click the shortcut when signing in.
+1. Double click the shortcut after signing in.
 
 It's manual, but it reliably lets me use my alt layout immediately — and the double click has become part of my startup routine.
 
