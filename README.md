@@ -7,8 +7,8 @@
 
 1. Download Kanata.
 
-    - Most people should download [`windows-binaries-x64.zip`](https://github.com/jtroo/kanata/releases/latest/download/windows-binaries-x64.zip).
-    - If you're using Windows on ARM, download [`windows-binaries-arm64.zip`](https://github.com/jtroo/kanata/releases/download/v1.11.0/windows-binaries-arm64.zip).
+    - Most people should download the [`x64` version](https://github.com/jtroo/kanata/releases/latest/download/windows-binaries-x64.zip).
+    - If you're using Windows on ARM, download the [`arm64` version](https://github.com/jtroo/kanata/releases/download/v1.11.0/windows-binaries-arm64.zip).
 
 1. Extract the downloaded zip file.
 
@@ -39,7 +39,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 <details>
 <summary><strong>Linux</strong></summary>
 
-1. Download [`linux-binaries-x64.zip`](https://github.com/jtroo/kanata/releases/latest/download/linux-binaries-x64.zip).
+1. Download [Kanata](https://github.com/jtroo/kanata/releases/latest/download/linux-binaries-x64.zip).
 
 1. Extract the downloaded zip file.
 
@@ -68,14 +68,14 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 <details>
 <summary><strong>macOS 10 and older</strong></summary>
 
-> [!NOTE]
+> [!WARNING]
 > It is unclear whether the latest version of Kanata works with macOS 10 and older. Support for macOS 10 was added to Kanata in [v1.6.0](https://github.com/jtroo/kanata/releases/tag/v1.6.0), so you may need to start there. Kanata has been reported to [work in macOS Catalina (v10.15)](https://github.com/jtroo/kanata/issues/676#issuecomment-1868389437).
 
 1. Install the [Karabiner kernel extension](https://github.com/pqrs-org/Karabiner-VirtualHIDDevice-archived) for macOS 10. The [Kmonad instructions](https://github.com/kmonad/kmonad/blob/master/doc/installation.md#macos) for installing the kernel extension (kext) may be helpful.
 
-1. Download [`macos-binaries-x64.zip`](https://github.com/jtroo/kanata/releases/latest/download/macos-binaries-x64.zip).
+1. Download [Kanata](https://github.com/jtroo/kanata/releases/latest/download/macos-binaries-x64.zip).
 
-    - *Note: This is from the latest version of Kanata.*
+    - *Note: This is from the latest version.*
 
 1. Extract the downloaded zip file.
 
@@ -107,13 +107,16 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 <details>
 <summary><strong>macOS 11 and 12</strong></summary>
 
-> [!TIP]
-> Read Kanata's [setup guide for macOS](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md), which is more in-depth and goes over granting permissions, running Kanata on startup, and troubleshooting.
+> [!WARNING]
+> There was a report of Kanata [not working on macOS 11](https://github.com/jtroo/kanata/discussions/1242). Presumably, the user was using [v1.6.1](https://github.com/jtroo/kanata/releases/tag/v1.6.1) at the time.
 
 > [!NOTE]
 > @benvallack talks about how he got [Kanata running on macOS 12](https://www.youtube.com/watch?v=4yiMbP_ZySQ&t=1m23s).
 
-1. Download [Karabiner driver (v3.1.0)](https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice/releases/download/v3.1.0/Karabiner-DriverKit-VirtualHIDDevice-3.1.0.pkg) and run the installer.
+> [!TIP]
+> Read Kanata's [setup guide for macOS](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md), which is more in-depth and goes over granting permissions, running Kanata on startup, and troubleshooting.
+
+1. Download the [Karabiner driver (v3.1.0)](https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice/releases/download/v3.1.0/Karabiner-DriverKit-VirtualHIDDevice-3.1.0.pkg) and run the installer.
 
 1. Open a terminal and activate the driver:
 
@@ -123,8 +126,8 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 1. Download Kanata v1.7.0:
 
-    - Most people should download [`kanata_macos_cmd_allowed_arm64`](https://github.com/jtroo/kanata/releases/download/v1.7.0/kanata_macos_cmd_allowed_arm64).
-    - If you're using an Intel Mac, download [`kanata_macos_cmd_allowed_x86_64`](https://github.com/jtroo/kanata/releases/download/v1.7.0/kanata_macos_cmd_allowed_x86_64).
+    - Most people should download the [`arm64` version](https://github.com/jtroo/kanata/releases/download/v1.7.0/kanata_macos_cmd_allowed_arm64).
+    - If you're using an Intel Mac, download the [`x86_64` version](https://github.com/jtroo/kanata/releases/download/v1.7.0/kanata_macos_cmd_allowed_x86_64).
 
 1. Download [`example.kbd`](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/releases/download/example.kbd/example.kbd) and put it in the same folder as Kanata.
 
@@ -142,11 +145,11 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
     sudo ./kanata_macos_cmd_allowed_arm64 --cfg example.kbd
     ```
 
-    **x64**
+    **x86_64**
 
     ```shell
-    chmod +x ./kanata_macos_cmd_allowed_x64  # Make Kanata runnable if needed.
-    sudo ./kanata_macos_cmd_allowed_x64 --cfg example.kbd
+    chmod +x ./kanata_macos_cmd_allowed_x86_64  # Make Kanata runnable if needed.
+    sudo ./kanata_macos_cmd_allowed_x86_64 --cfg example.kbd
     ```
 
 </details>
@@ -157,7 +160,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 > [!TIP]
 > Read Kanata's [setup guide for macOS](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md), which is more in-depth and goes over granting permissions, running Kanata on startup, and troubleshooting.
 
-1. Download [Karabiner driver (v6.2.0)](https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice/releases/download/v6.2.0/Karabiner-DriverKit-VirtualHIDDevice-6.2.0.pkg) and run the installer.
+1. Download the [Karabiner driver (v6.2.0)](https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice/releases/download/v6.2.0/Karabiner-DriverKit-VirtualHIDDevice-6.2.0.pkg) and run the installer.
 
 1. Open a terminal and activate the driver:
 
@@ -169,7 +172,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
     - A reboot may be required if you previously ran `deactivate`.
 
-1. Verify the daemon is running:
+1. Verify the Karabiner daemon is running:
 
     ```shell
     sudo launchctl list | grep org.pqrs
@@ -179,8 +182,8 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 1. Download Kanata.
 
-    - Most people should download [`macos-binaries-arm64.zip`](https://github.com/jtroo/kanata/releases/latest/download/macos-binaries-arm64.zip).
-    - If you're using an Intel Mac, download [`macos-binaries-x64.zip`](https://github.com/jtroo/kanata/releases/latest/download/macos-binaries-x64.zip).
+    - Most people should download the [`arm64` version](https://github.com/jtroo/kanata/releases/latest/download/macos-binaries-arm64.zip).
+    - If you're using an Intel Mac, download the [`x64` version](https://github.com/jtroo/kanata/releases/latest/download/macos-binaries-x64.zip).
 
 1. Extract the downloaded zip file.
 
