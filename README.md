@@ -16,7 +16,9 @@ This guide shows you how to set up a layout with Kanata, change the layout, and 
 
 1. Download [`example.kbd`](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/releases/download/example.kbd/example.kbd) and put it in the extracted folder.
 
-1. Right-click an empty space inside the folder and select **Open in Terminal**.
+1. Open the extracted folder in a terminal.
+
+    - If you don't know how: Right-click an empty space inside the folder and select **Open in Terminal**.
 
 1. Run Kanata:
 
@@ -49,7 +51,9 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 1. Download [`example.kbd`](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/releases/download/example.kbd/example.kbd) and put it in the extracted folder.
 
-1. Right-click an empty space inside the folder and select **Open in Terminal**.
+1. Open the extracted folder in a terminal.
+
+    - If you don't know how: Right-click an empty space inside the folder and select **Open in Terminal**.
 
 1. Make Kanata runnable:
 
@@ -87,8 +91,9 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 1. Download [`example.kbd`](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/releases/download/example.kbd/example.kbd) and put it in the extracted folder.
 
-1. Right-click an empty space inside the folder and select **Services → New Terminal at Folder**.
+1. Open the extracted folder in a terminal.
 
+    - If you don't know how: Right-click an empty space inside the folder and select **Services → New Terminal at Folder**.
     - If that option doesn't appear: Go to **Finder → Services → Services Settings... → Files and Folders** and enable **New Terminal at Folder**.
 
 1. Make Kanata runnable:
@@ -142,26 +147,31 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
     - Most people should download the [`arm64` version](https://github.com/jtroo/kanata/releases/download/v1.7.0/kanata_macos_cmd_allowed_arm64).
     - If you're using an Intel Mac, download the [`x86_64` version](https://github.com/jtroo/kanata/releases/download/v1.7.0/kanata_macos_cmd_allowed_x86_64).
 
-1. Rename the executable we'll be using:
-
-    - `arm64`: Rename `kanata_macos_cmd_allowed_arm64` to `kanata`
-    - `x64`: Rename `kanata_macos_cmd_allowed_x64` to `kanata`
-
-1. Open **System Settings → Privacy & Security → Input Monitoring** and add the Kanata executable.
+1. Open **System Settings → Privacy & Security → Input Monitoring** and add the Kanata executable (`kanata_macos_cmd_allowed_...`).
 
 1. Open **System Settings → Privacy & Security → Accessibility** and add the Kanata executable.
 
 1. Download [`example.kbd`](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/releases/download/example.kbd/example.kbd) and put it in the Kanata folder.
 
-1. Right-click an empty space inside the folder and select **Services → New Terminal at Folder**.
+1. Open the extracted folder in a terminal.
 
+    - If you don't know how: Right-click an empty space inside the folder and select **Services → New Terminal at Folder**.
     - If that option doesn't appear: Go to **Finder → Services → Services Settings... → Files and Folders** and enable **New Terminal at Folder**.
 
 1. Run Kanata:
 
+    **arm64**
+
     ```shell
-    chmod +x ./kanata  # Make Kanata runnable.
-    sudo ./kanata --cfg example.kbd
+    chmod +x ./kanata_macos_cmd_allowed_arm64  # Make Kanata runnable.
+    sudo ./kanata_macos_cmd_allowed_arm64 --cfg example.kbd
+    ```
+
+    **x64**
+
+    ```shell
+    chmod +x ./kanata_macos_cmd_allowed_x64  # Make Kanata runnable.
+    sudo ./kanata_macos_cmd_allowed_x64 --cfg example.kbd
     ```
 
 Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Type a few letters!
@@ -202,26 +212,31 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 1. Extract the downloaded zip file.
 
-1. Rename the executable we'll be using:
-
-    - `arm64`: Rename `kanata_macos_cmd_allowed_arm64` to `kanata`
-    - `x64`: Rename `kanata_macos_cmd_allowed_x64` to `kanata`
-
-1. Open **System Settings → Privacy & Security → Input Monitoring** and add the Kanata executable.
+1. Open **System Settings → Privacy & Security → Input Monitoring** and add the Kanata executable (`kanata_macos_cmd_allowed_...`).
 
 1. Open **System Settings → Privacy & Security → Accessibility** and add the Kanata executable.
 
 1. Download [`example.kbd`](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/releases/download/example.kbd/example.kbd) and put it in the Kanata folder.
 
-1. Right-click an empty space inside the folder and select **Services → New Terminal at Folder**.
+1. Open the extracted folder in a terminal.
 
+    - If you don't know how: Right-click an empty space inside the folder and select **Services → New Terminal at Folder**.
     - If that option doesn't appear: Go to **Finder → Services → Services Settings... → Files and Folders** and enable **New Terminal at Folder**.
 
 1. Run Kanata:
 
+    **arm64**
+
     ```shell
-    chmod +x ./kanata  # Make Kanata runnable.
-    sudo ./kanata --cfg example.kbd
+    chmod +x ./kanata_macos_cmd_allowed_arm64  # Make Kanata runnable.
+    sudo ./kanata_macos_cmd_allowed_arm64 --cfg example.kbd
+    ```
+
+    **x64**
+
+    ```shell
+    chmod +x ./kanata_macos_cmd_allowed_x64  # Make Kanata runnable.
+    sudo ./kanata_macos_cmd_allowed_x64 --cfg example.kbd
     ```
 
 Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Type a few letters!
