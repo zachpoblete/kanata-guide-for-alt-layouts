@@ -170,7 +170,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 1. Open **System Settings → General → Login Items & Extensions → Driver Extensions** and toggle on the entry for `org.pqrs.Karabiner-DriverKit-VirtualHIDDevice`.
 
-    - A reboot may be required if you previously ran `deactivate`.
+    - A restart may be required if you previously ran `deactivate`.
 
 1. Verify the Karabiner daemon is running:
 
