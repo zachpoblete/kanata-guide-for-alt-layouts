@@ -296,22 +296,6 @@ Using a [different layout](https://layouts.wiki/guides/start/recommendations/) i
 > [!TIP]
 > To quickly try new layouts, use the `!cmini view [layout]` command in the [Alt Keyboard Layouts Discord](https://discord.gg/4kVZu7uWdy). This returns a text version of the layout that you can copy into a Kanata config file.
 
-## Other example configs
-
-> [!NOTE]
-> Learn more about any Kanata feature used below in the [Configuration Guide](https://jtroo.github.io/config.html).
-
-- [`gallium-with-qwerty-shortcuts.kbd`](layouts/gallium-with-qwerty-shortcuts.kbd)
-    - Makes holding `Control`, `Alt`, or `Super` temporarily switch to QWERTY
-- [`graphite.kbd`](layouts/graphite.kbd)
-    - A layout that uses non-standard shift pairs (e.g. typing `Shift + ,` outputs `?`, not `<`)
-- [`night.kbd`](layouts/night.kbd)
-    - A [thumb-alpha](https://layouts.wiki/guides/start/recommendations/#thumb-alpha) layout
-- [`whirl.kbd`](layouts/whirl.kbd)
-    - A layout that uses a [magic key](https://layouts.wiki/reference/terminology/magic/)
-- [`afterburner.kbd`](layouts/afterburner.kbd)
-    - A layout that uses a skip magic key
-
 ## Run Kanata on startup
 
 <details>
@@ -357,6 +341,22 @@ What follows is a manual method, but it reliably lets you use your alt layout im
 Kanata's setup guide covers [running Kanata on startup](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md#6-optional-install-as-a-launchdaemon).
 
 </details>
+
+## Other example configs
+
+> [!NOTE]
+> Learn more about any Kanata feature used below in the [Configuration Guide](https://jtroo.github.io/config.html).
+
+- [`gallium-with-qwerty-shortcuts.kbd`](layouts/gallium-with-qwerty-shortcuts.kbd)
+    - Makes holding `Control`, `Alt`, or `Super` temporarily switch to QWERTY
+- [`graphite.kbd`](layouts/graphite.kbd)
+    - A layout that uses non-standard shift pairs (e.g. typing `Shift + ,` outputs `?`, not `<`)
+- [`night.kbd`](layouts/night.kbd)
+    - A [thumb-alpha](https://layouts.wiki/guides/start/recommendations/#thumb-alpha) layout
+- [`whirl.kbd`](layouts/whirl.kbd)
+    - A layout that uses a [magic key](https://layouts.wiki/reference/terminology/magic/)
+- [`afterburner.kbd`](layouts/afterburner.kbd)
+    - A layout that uses a skip magic key
 
 ## Additional resources
 
