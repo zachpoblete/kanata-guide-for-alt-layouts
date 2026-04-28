@@ -121,7 +121,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 <summary><strong>macOS 11 and 12</strong></summary>
 
 > [!WARNING]
-> There was a report of Kanata [not working on macOS 11](https://github.com/jtroo/kanata/discussions/1242). (Presumably, the user was using [v1.6.1](https://github.com/jtroo/kanata/releases/tag/v1.6.1) at the time.) Ben Vallack was able to [run Kanata on macOS 12](https://www.youtube.com/watch?v=4yiMbP_ZySQ&t=1m23s).
+> There was a report of Kanata [not working on macOS 11](https://github.com/jtroo/kanata/discussions/1242). (Presumably, the user was using Kanata v1.6.1 at the time.) Ben Vallack was able to [run Kanata on macOS 12](https://www.youtube.com/watch?v=4yiMbP_ZySQ&t=1m23s).
 
 1. Download the [Karabiner driver (v3.1.0)](https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice/releases/download/v3.1.0/Karabiner-DriverKit-VirtualHIDDevice-3.1.0.pkg) and run the installer.
 
@@ -356,7 +356,7 @@ Kanata's setup guide covers [running Kanata on startup](https://github.com/jtroo
 
 </details>
 
-# Additional links
+# Additional resources
 
 - [vscode-kanata](https://github.com/rszyma/vscode-kanata)
     - A VS Code extension that adds language support for Kanata config files
