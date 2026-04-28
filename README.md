@@ -1,8 +1,10 @@
+# Kanata Guide for Alt Layouts
+
 [Kanata](https://github.com/jtroo/kanata) is a keyboard remapper for Windows, Linux, and macOS. It lets you use [alternate layouts](https://layouts.wiki/guides/start/intro/) on any keyboard and supports advanced features like layers, tap-hold, and combos.
 
 This guide shows you how to set up a layout with Kanata, change the layout, and run Kanata on startup.
 
-# Set up a layout with Kanata
+## Set up a layout with Kanata
 
 <details>
 <summary><strong>Windows</strong></summary>
@@ -248,7 +250,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 </details>
 
-# Change the layout
+## Change the layout
 
 `example.kbd` consists of two parts, `defsrc` and `deflayer`:
 
@@ -294,7 +296,7 @@ Using a [different layout](https://layouts.wiki/guides/start/recommendations/) i
 > [!TIP]
 > To quickly try new layouts, use the `!cmini view [layout]` command in the [Alt Keyboard Layouts Discord](https://discord.gg/4kVZu7uWdy). This returns a text version of the layout that you can copy into a Kanata config file.
 
-# Other example configs
+## Other example configs
 
 > [!NOTE]
 > Learn more about any Kanata feature used below in the [Configuration Guide](https://jtroo.github.io/config.html).
@@ -310,7 +312,7 @@ Using a [different layout](https://layouts.wiki/guides/start/recommendations/) i
 - [`afterburner.kbd`](layouts/afterburner.kbd)
     - A layout that uses a skip magic key
 
-# Run Kanata on startup
+## Run Kanata on startup
 
 <details>
 <summary><strong>Windows</strong></summary>
@@ -356,13 +358,13 @@ Kanata's setup guide covers [running Kanata on startup](https://github.com/jtroo
 
 </details>
 
-# Additional resources
+## Additional resources
 
 - [vscode-kanata](https://github.com/rszyma/vscode-kanata)
     - A VS Code extension that adds language support for Kanata config files
 - [Windows: Enable Kanata in elevated windows](https://jtroo.github.io/config.html#windows-only-work-elevated)
 
-# Feedback
+## Feedback
 
 If anything in this guide is unclear or doesn't work, please open an [issue](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/issues) or message me (@novachromatic) on the [Alt Keyboard Layouts Discord](https://discord.gg/4kVZu7uWdy).
 
