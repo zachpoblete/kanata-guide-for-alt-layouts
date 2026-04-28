@@ -1,5 +1,7 @@
 [Kanata](https://github.com/jtroo/kanata) is a keyboard remapper for Windows, Linux, and macOS. It lets you use [alternate layouts](https://layouts.wiki/guides/start/intro/) on any keyboard and supports advanced features like layers, tap-hold, and combos.
 
+This guide shows you how to set up a layout with Kanata, change the layout, and run Kanata on startup.
+
 # Set up a layout with Kanata
 
 <details>
@@ -49,7 +51,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 1. Right-click an empty space inside the folder and select **Open in Terminal**.
 
-1. Make Kanata runnable if needed:
+1. Make Kanata runnable:
 
     ```shell
     chmod +x kanata_linux_cmd_allowed_x64
@@ -89,7 +91,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
     - If that option doesn't appear: Go to **Finder → Services → Services Settings... → Files and Folders** and enable **New Terminal at Folder**.
 
-1. Make Kanata runnable if needed:
+1. Make Kanata runnable:
 
     ```shell
     chmod +x kanata
@@ -125,7 +127,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 1. Open **System Settings → General → Login Items & Extensions → Driver Extensions** and toggle on the entry for `org.pqrs.Karabiner-DriverKit-VirtualHIDDevice`.
 
-    - A restart may be required if you previously ran `deactivate`.
+    - If you previously ran `deactivate`, restart your computer.
 
 1. Verify the Karabiner daemon is running:
 
@@ -158,7 +160,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 1. Run Kanata:
 
     ```shell
-    chmod +x ./kanata  # Make Kanata runnable if needed.
+    chmod +x ./kanata  # Make Kanata runnable.
     sudo ./kanata --cfg example.kbd
     ```
 
@@ -183,7 +185,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 1. Open **System Settings → General → Login Items & Extensions → Driver Extensions** and toggle on the entry for `org.pqrs.Karabiner-DriverKit-VirtualHIDDevice`.
 
-    - A restart may be required if you previously ran `deactivate`.
+    - If you previously ran `deactivate`, restart your computer.
 
 1. Verify the Karabiner daemon is running:
 
@@ -218,7 +220,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 1. Run Kanata:
 
     ```shell
-    chmod +x ./kanata  # Make Kanata runnable if needed.
+    chmod +x ./kanata  # Make Kanata runnable.
     sudo ./kanata --cfg example.kbd
     ```
 
@@ -334,15 +336,9 @@ What follows is a manual method, but it reliably lets you use your alt layout im
 > [!TIP]
 > See the [macOS discussion](https://github.com/jtroo/kanata/discussions/1537).
 
-Kanata's setup guide for macOS covers [running Kanata on startup](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md#6-optional-install-as-a-launchdaemon).
+Kanata's setup guide covers [running Kanata on startup](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md#6-optional-install-as-a-launchdaemon).
 
 </details>
-
-# Feedback
-
-If anything in this guide is unclear or doesn't work, please open an [issue](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/issues) or message me (@novachromatic) on the [Alt Keyboard Layouts Discord](https://discord.gg/4kVZu7uWdy).
-
-Suggestions appreciated!
 
 # Additional links
 
@@ -350,3 +346,8 @@ Suggestions appreciated!
     - A VS Code extension that adds language support for Kanata config files
 - [Windows: Enable Kanata in elevated windows](https://jtroo.github.io/config.html#windows-only-work-elevated)
 
+# Feedback
+
+If anything in this guide is unclear or doesn't work, please open an [issue](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/issues) or message me (@novachromatic) on the [Alt Keyboard Layouts Discord](https://discord.gg/4kVZu7uWdy).
+
+Suggestions appreciated!
