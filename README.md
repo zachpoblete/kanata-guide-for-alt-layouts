@@ -12,7 +12,7 @@ This guide shows you how to set up a layout with Kanata, change the layout, and 
 1. Download Kanata.
 
     - Most people should download the [`x64` version](https://github.com/jtroo/kanata/releases/latest/download/windows-binaries-x64.zip).
-    - If you're using Windows on ARM, download the [`arm64` version](https://github.com/jtroo/kanata/releases/download/v1.11.0/windows-binaries-arm64.zip).
+    - If you’re using Windows on ARM, download the [`arm64` version](https://github.com/jtroo/kanata/releases/download/v1.11.0/windows-binaries-arm64.zip).
 
 1. Extract the downloaded zip file.
 
@@ -20,7 +20,7 @@ This guide shows you how to set up a layout with Kanata, change the layout, and 
 
 1. Open the folder in a terminal.
 
-    - If you don't know how: Right-click an empty space inside the folder and select **Open in Terminal**.
+    - If you don’t know how: Right-click an empty space inside the folder and select **Open in Terminal**.
 
 1. Run Kanata:
 
@@ -55,7 +55,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 1. Open the folder in a terminal.
 
-    - If you don't know how: Right-click an empty space inside the folder and select **Open in Terminal**.
+    - If you don’t know how: Right-click an empty space inside the folder and select **Open in Terminal**.
 
 1. Make Kanata runnable:
 
@@ -95,9 +95,9 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 1. Open the folder in a terminal.
 
-    If you don't know how: Right-click an empty space inside the folder and select **Services → New Terminal at Folder**.
+    If you don’t know how: Right-click an empty space inside the folder and select **Services → New Terminal at Folder**.
 
-    - If that option doesn't appear: Go to **Finder → Services → Services Settings... → Files and Folders** and enable **New Terminal at Folder**.
+    - If that option doesn’t appear: Go to **Finder → Services → Services Settings... → Files and Folders** and enable **New Terminal at Folder**.
 
 1. Make Kanata runnable:
 
@@ -115,7 +115,7 @@ Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/star
 
 Stop Kanata by holding: `Left Control + Space + Escape`.
 
-**Troubleshooting:** See [Kanata's setup guide](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md#8-troubleshooting).
+**Troubleshooting:** See [Kanata’s setup guide](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md#8-troubleshooting).
 
 </details>
 
@@ -148,7 +148,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 1. Download Kanata v1.7.0:
 
     - Most people should download the [`arm64` version](https://github.com/jtroo/kanata/releases/download/v1.7.0/kanata_macos_cmd_allowed_arm64).
-    - If you're using an Intel Mac, download the [`x86_64` version](https://github.com/jtroo/kanata/releases/download/v1.7.0/kanata_macos_cmd_allowed_x86_64).
+    - If you’re using an Intel Mac, download the [`x86_64` version](https://github.com/jtroo/kanata/releases/download/v1.7.0/kanata_macos_cmd_allowed_x86_64).
 
 1. Open **System Settings → Privacy & Security → Input Monitoring** and add the Kanata executable (`kanata_macos_cmd_allowed_...`).
 
@@ -158,8 +158,8 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 1. Open the folder in a terminal.
 
-    If you don't know how: Right-click an empty space inside the folder and select **Services → New Terminal at Folder**.
-    - If that option doesn't appear: Go to **Finder → Services → Services Settings... → Files and Folders** and enable **New Terminal at Folder**.
+    If you don’t know how: Right-click an empty space inside the folder and select **Services → New Terminal at Folder**.
+    - If that option doesn’t appear: Go to **Finder → Services → Services Settings... → Files and Folders** and enable **New Terminal at Folder**.
 
 1. Run Kanata:
 
@@ -181,7 +181,7 @@ Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/star
 
 Stop Kanata by holding: `Left Control + Space + Escape`.
 
-**Troubleshooting:** See [Kanata's setup guide](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md#8-troubleshooting).
+**Troubleshooting:** See [Kanata’s setup guide](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md#8-troubleshooting).
 
 </details>
 
@@ -211,7 +211,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 1. Download Kanata.
 
     - Most people should download the [`arm64` version](https://github.com/jtroo/kanata/releases/latest/download/macos-binaries-arm64.zip).
-    - If you're using an Intel Mac, download the [`x64` version](https://github.com/jtroo/kanata/releases/latest/download/macos-binaries-x64.zip).
+    - If you’re using an Intel Mac, download the [`x64` version](https://github.com/jtroo/kanata/releases/latest/download/macos-binaries-x64.zip).
 
 1. Extract the downloaded zip file.
 
@@ -223,8 +223,8 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 1. Open the folder in a terminal.
 
-    If you don't know how: Right-click an empty space inside the folder and select **Services → New Terminal at Folder**.
-    - If that option doesn't appear: Go to **Finder → Services → Services Settings... → Files and Folders** and enable **New Terminal at Folder**.
+    If you don’t know how: Right-click an empty space inside the folder and select **Services → New Terminal at Folder**.
+    - If that option doesn’t appear: Go to **Finder → Services → Services Settings... → Files and Folders** and enable **New Terminal at Folder**.
 
 1. Run Kanata:
 
@@ -246,7 +246,7 @@ Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/star
 
 Stop Kanata by holding: `Left Control + Space + Escape`.
 
-**Troubleshooting:** See [Kanata's setup guide](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md#8-troubleshooting).
+**Troubleshooting:** See [Kanata’s setup guide](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md#8-troubleshooting).
 
 </details>
 
@@ -268,7 +268,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 )
 ```
 
-- `defsrc` is your keyboard's original layout (QWERTY).
+- `defsrc` is your keyboard’s original layout (QWERTY).
 - `deflayer` remaps it to Gallium.
 
 Kanata works by mapping keys from `defsrc` to `deflayer` position-by-position.
@@ -289,7 +289,7 @@ Replace the contents of `example.kbd` with this, then run Kanata again:
 )
 ```
 
-You're using the [Sturdy layout](https://layouts.wiki/guides/start/recommendations/#sturdy). Press `Q` on your keyboard&thinsp;—&thinsp;you’ll now get `V`.
+You’re using the [Sturdy layout](https://layouts.wiki/guides/start/recommendations/#sturdy). Press `Q` on your keyboard&thinsp;—&thinsp;you’ll now get `V`.
 
 Using a [different layout](https://layouts.wiki/guides/start/recommendations/) is just a matter of editing the keys in `deflayer` (and renaming the layer to match).
 
@@ -306,11 +306,11 @@ Using a [different layout](https://layouts.wiki/guides/start/recommendations/) i
 
 What follows is a manual method, but it reliably lets you use your alt layout immediately after signing in:
 
-1. Rename the executable to `kanata.exe` (so that it's easier to use).
+1. Rename the executable to `kanata.exe` (so that it’s easier to use).
 
 1. Make a shortcut of `kanata.exe`.
 
-1. Open the shortcut's properties.
+1. Open the shortcut’s properties.
 
 1. Edit the **Target** by appending `--cfg "path\to\example.kbd" --nodelay`. The full target should look like:
 
@@ -338,7 +338,7 @@ What follows is a manual method, but it reliably lets you use your alt layout im
 > [!TIP]
 > See the [macOS discussion](https://github.com/jtroo/kanata/discussions/1537).
 
-Kanata's setup guide covers [running Kanata on startup](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md#6-optional-install-as-a-launchdaemon).
+Kanata’s setup guide covers [running Kanata on startup](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md#6-optional-install-as-a-launchdaemon).
 
 </details>
 
@@ -366,6 +366,6 @@ Kanata's setup guide covers [running Kanata on startup](https://github.com/jtroo
 
 ## Feedback
 
-If anything in this guide is unclear or doesn't work, please open an [issue](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/issues) or message me (@novachromatic) on the [Alt Keyboard Layouts Discord](https://discord.gg/4kVZu7uWdy).
+If anything in this guide is unclear or doesn’t work, please open an [issue](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/issues) or message me (@novachromatic) on the [Alt Keyboard Layouts Discord](https://discord.gg/4kVZu7uWdy).
 
 Suggestions appreciated!
