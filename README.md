@@ -16,7 +16,7 @@ This guide shows you how to set up a layout with Kanata, change the layout, and 
 
 1. Download [`example.kbd`](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/releases/download/example.kbd/example.kbd) and put it in the extracted folder.
 
-1. Open the extracted folder in a terminal.
+1. Open the folder in a terminal.
 
     - If you don't know how: Right-click an empty space inside the folder and select **Open in Terminal**.
 
@@ -51,7 +51,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 1. Download [`example.kbd`](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/releases/download/example.kbd/example.kbd) and put it in the extracted folder.
 
-1. Open the extracted folder in a terminal.
+1. Open the folder in a terminal.
 
     - If you don't know how: Right-click an empty space inside the folder and select **Open in Terminal**.
 
@@ -91,9 +91,10 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 1. Download [`example.kbd`](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/releases/download/example.kbd/example.kbd) and put it in the extracted folder.
 
-1. Open the extracted folder in a terminal.
+1. Open the folder in a terminal.
 
-    - If you don't know how: Right-click an empty space inside the folder and select **Services → New Terminal at Folder**.
+    If you don't know how: Right-click an empty space inside the folder and select **Services → New Terminal at Folder**.
+
     - If that option doesn't appear: Go to **Finder → Services → Services Settings... → Files and Folders** and enable **New Terminal at Folder**.
 
 1. Make Kanata runnable:
@@ -153,9 +154,9 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 1. Download [`example.kbd`](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/releases/download/example.kbd/example.kbd) and put it in the Kanata folder.
 
-1. Open the extracted folder in a terminal.
+1. Open the folder in a terminal.
 
-    - If you don't know how: Right-click an empty space inside the folder and select **Services → New Terminal at Folder**.
+    If you don't know how: Right-click an empty space inside the folder and select **Services → New Terminal at Folder**.
     - If that option doesn't appear: Go to **Finder → Services → Services Settings... → Files and Folders** and enable **New Terminal at Folder**.
 
 1. Run Kanata:
@@ -218,9 +219,9 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 1. Download [`example.kbd`](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/releases/download/example.kbd/example.kbd) and put it in the Kanata folder.
 
-1. Open the extracted folder in a terminal.
+1. Open the folder in a terminal.
 
-    - If you don't know how: Right-click an empty space inside the folder and select **Services → New Terminal at Folder**.
+    If you don't know how: Right-click an empty space inside the folder and select **Services → New Terminal at Folder**.
     - If that option doesn't appear: Go to **Finder → Services → Services Settings... → Files and Folders** and enable **New Terminal at Folder**.
 
 1. Run Kanata:
