@@ -34,6 +34,8 @@ Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/star
 
 Stop Kanata by holding: `Left Control + Space + Escape`.
 
+**Troubleshooting:** See the known [platform (and hardware) issues](https://github.com/jtroo/kanata/blob/main/docs/platform-known-issues.adoc).
+
 </details>
 
 <details>
@@ -62,6 +64,8 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Type a few letters!
 
 Stop Kanata by holding: `Left Control + Space + Escape`.
+
+**Troubleshooting:** See the known [platform (and hardware) issues](https://github.com/jtroo/kanata/blob/main/docs/platform-known-issues.adoc).
 
 </details>
 
@@ -100,6 +104,8 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Type a few letters!
 
 Stop Kanata by holding: `Left Control + Space + Escape`.
+
+**Troubleshooting:** See [Kanata's setup guide](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md#8-troubleshooting).
 
 </details>
 
@@ -160,6 +166,8 @@ Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/star
 
 Stop Kanata by holding: `Left Control + Space + Escape`.
 
+**Troubleshooting:** See [Kanata's setup guide](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md#8-troubleshooting).
+
 </details>
 
 <details>
@@ -218,9 +226,9 @@ Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/star
 
 Stop Kanata by holding: `Left Control + Space + Escape`.
 
-</details>
+**Troubleshooting:** See [Kanata's setup guide](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md#8-troubleshooting).
 
-**Troubleshooting:** See the known [platform (and hardware) issues](https://github.com/jtroo/kanata/blob/main/docs/platform-known-issues.adoc).
+</details>
 
 # Change the layout
 
