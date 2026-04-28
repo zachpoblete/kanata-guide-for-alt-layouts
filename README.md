@@ -80,7 +80,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 <details>
 <summary><strong>macOS 10 and older</strong></summary>
 
-> [!WARNING]
+> **⚠️ Warning:**
 > It is unclear whether the latest version of Kanata works with macOS 10 and older. Support for macOS 10 was added to Kanata in [v1.6.0](https://github.com/jtroo/kanata/releases/tag/v1.6.0), so you may need to start there. Kanata has been reported to [work in macOS Catalina (v10.15)](https://github.com/jtroo/kanata/issues/676#issuecomment-1868389437).
 
 1. Install the [Karabiner kernel extension](https://github.com/pqrs-org/Karabiner-VirtualHIDDevice-archived) for macOS 10. The [Kmonad instructions](https://github.com/kmonad/kmonad/blob/master/doc/installation.md#macos) for installing the kernel extension (kext) may be helpful.
@@ -122,7 +122,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 <details>
 <summary><strong>macOS 11 and 12</strong></summary>
 
-> [!WARNING]
+> **⚠️ Warning:**
 > There was a report of Kanata [not working on macOS 11](https://github.com/jtroo/kanata/discussions/1242). (Presumably, the user was using Kanata v1.6.1 at the time.) Ben Vallack was able to [run Kanata on macOS 12](https://www.youtube.com/watch?v=4yiMbP_ZySQ&t=1m23s).
 
 1. Download the [Karabiner driver (v3.1.0)](https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice/releases/download/v3.1.0/Karabiner-DriverKit-VirtualHIDDevice-3.1.0.pkg) and run the installer.
@@ -301,7 +301,7 @@ Using a different layout is just a matter of editing the keys in `deflayer` (and
 <details>
 <summary><strong>Windows</strong></summary>
 
-> [!TIP]
+> **💡 Tip:**
 > See the [Windows discussion](https://github.com/jtroo/kanata/discussions/193).
 
 What follows is a manual method, but it reliably lets you use your alt layout immediately after signing in:
@@ -327,7 +327,7 @@ What follows is a manual method, but it reliably lets you use your alt layout im
 <details>
 <summary><strong>Linux</strong></summary>
 
-> [!TIP]
+> **💡 Tip:**
 > See the [Linux discussion (reply in thread)](https://github.com/jtroo/kanata/discussions/130#discussioncomment-10227272).
 
 </details>
@@ -335,7 +335,7 @@ What follows is a manual method, but it reliably lets you use your alt layout im
 <details>
 <summary><strong>macOS</strong></summary>
 
-> [!TIP]
+> **💡 Tip:**
 > See the [macOS discussion](https://github.com/jtroo/kanata/discussions/1537).
 
 Kanata’s setup guide covers [running Kanata on startup](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md#6-optional-install-as-a-launchdaemon).
