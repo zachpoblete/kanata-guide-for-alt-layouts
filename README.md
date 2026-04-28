@@ -216,6 +216,8 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 </details>
 
+**Troubleshooting:** See the [platform (and hardware) known issues](https://github.com/jtroo/kanata/blob/main/docs/platform-known-issues.adoc).
+
 # Change the layout
 
 `example.kbd` consists of two parts, `defsrc` and `deflayer`:
