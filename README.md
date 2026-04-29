@@ -315,15 +315,14 @@ What follows is a manual method, but it reliably lets you use your alt layout im
 <details>
 <summary><strong>Linux</strong></summary>
 
-> **💡 Tip:**
-> See the [Linux discussion (reply in thread)](https://github.com/jtroo/kanata/discussions/130#discussioncomment-10227272).
+See the [Linux discussion (reply in thread)](https://github.com/jtroo/kanata/discussions/130#discussioncomment-10227272).
 
 </details>
 
 <details>
 <summary><strong>macOS</strong></summary>
 
-See how to [run Kanata on startup](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md#6-optional-install-as-a-launchdaemon) from the setup guide.
+See [Kanata's setup guide](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md#6-optional-install-as-a-launchdaemon).
 
 </details>
 
