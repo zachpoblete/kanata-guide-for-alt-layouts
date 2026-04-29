@@ -279,7 +279,7 @@ Replace the contents of `example.kbd` with this, then run Kanata again:
 )
 ```
 
-You’re using the [Sturdy layout](https://layouts.wiki/guides/start/recommendations/#sturdy). Press `Q` on your keyboard&thinsp;—&thinsp;you’ll now get `V`.
+You’re using the [Sturdy layout](https://layouts.wiki/guides/start/recommendations/#sturdy). Press `Q` on your keyboard&thinsp;—&thinsp;you’ll now get `v` (instead of `b` on Gallium).
 
 Using a different layout is just a matter of editing the keys in `deflayer` (and renaming the layer to match).
 
@@ -296,9 +296,7 @@ Using a different layout is just a matter of editing the keys in `deflayer` (and
 
 What follows is a manual method, but it reliably lets you use your alt layout immediately after signing in:
 
-1. Rename the executable to `kanata.exe` (so that it’s easier to use).
-
-1. Make a shortcut of `kanata.exe`.
+1. Make a shortcut of the Kanata executable.
 
 1. Open the shortcut’s properties.
 
@@ -325,10 +323,7 @@ What follows is a manual method, but it reliably lets you use your alt layout im
 <details>
 <summary><strong>macOS</strong></summary>
 
-> **💡 Tip:**
-> See the [macOS discussion](https://github.com/jtroo/kanata/discussions/1537).
-
-Kanata’s setup guide covers [running Kanata on startup](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md#6-optional-install-as-a-launchdaemon).
+See how to [run Kanata on startup](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md#6-optional-install-as-a-launchdaemon) from the setup guide.
 
 </details>
 
