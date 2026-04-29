@@ -17,7 +17,7 @@ This guide shows you how to set up an alternate layout with Kanata, edit the lay
 
 1. Extract the downloaded zip file.
 
-1. Download [`example.kbd`](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/releases/download/example.kbd/example.kbd) and put it in the extracted folder.
+1. Download [`example.kbd`](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/releases/download/example.kbd/example.kbd) and put it in the same folder as the Kanata executable (looks like `kanata_windows_gui_winIOv2_cmd_allowed_...` from the extracted zip).
 
 1. Open the folder in a terminal.
 
@@ -51,7 +51,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 1. Extract the downloaded zip file.
 
-1. Download [`example.kbd`](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/releases/download/example.kbd/example.kbd) and put it in the extracted folder.
+1. Download [`example.kbd`](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/releases/download/example.kbd/example.kbd) and put it in the same folder as the Kanata executable (`kanata_linux_cmd_allowed_x64` from the extracted zip).
 
 1. Open the folder in a terminal.
 
@@ -85,7 +85,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 1. Extract the downloaded zip file.
 
-1. Download [`example.kbd`](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/releases/download/example.kbd/example.kbd) and put it in the extracted folder.
+1. Download [`example.kbd`](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/releases/download/example.kbd/example.kbd) and put it in the same folder as the Kanata executable (`kanata_macos_cmd_allowed_x64` from the extracted zip).
 
 1. Open the folder in a terminal.
 
@@ -140,11 +140,11 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
     - Most people should download the [`arm64` version](https://github.com/jtroo/kanata/releases/download/v1.7.0/kanata_macos_cmd_allowed_arm64).
     - If you’re using an Intel Mac, download the [`x86_64` version](https://github.com/jtroo/kanata/releases/download/v1.7.0/kanata_macos_cmd_allowed_x86_64).
 
-1. Open **System Settings → Privacy & Security → Input Monitoring** and add the Kanata executable (looks like `kanata_macos_cmd_allowed_...` from the Kanata folder).
+1. Open **System Settings → Privacy & Security → Input Monitoring** and add the Kanata executable (looks like `kanata_macos_cmd_allowed_...`).
 
 1. Open **System Settings → Privacy & Security → Accessibility** and add the Kanata executable.
 
-1. Download [`example.kbd`](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/releases/download/example.kbd/example.kbd) and put it in the Kanata folder.
+1. Download [`example.kbd`](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/releases/download/example.kbd/example.kbd) and put it in the same folder as the Kanata executable.
 
 1. Open the folder in a terminal.
 
@@ -206,11 +206,11 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 1. Extract the downloaded zip file.
 
-1. Open **System Settings → Privacy & Security → Input Monitoring** and add the Kanata executable (looks like `kanata_macos_cmd_allowed_...` from the Kanata folder).
+1. Open **System Settings → Privacy & Security → Input Monitoring** and add the Kanata executable (looks like `kanata_macos_cmd_allowed_...` from the extracted zip).
 
 1. Open **System Settings → Privacy & Security → Accessibility** and add the Kanata executable.
 
-1. Download [`example.kbd`](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/releases/download/example.kbd/example.kbd) and put it in the Kanata folder.
+1. Download [`example.kbd`](https://github.com/zachpoblete/kanata-guide-for-alt-layouts/releases/download/example.kbd/example.kbd) and put it in the same folder as the Kanata executable.
 
 1. Open the folder in a terminal.
 
