@@ -328,7 +328,7 @@ See the [Linux discussion (reply in thread)](https://github.com/jtroo/kanata/dis
 <details>
 <summary><strong>macOS</strong></summary>
 
-See [Kanata's setup guide](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md#6-optional-install-as-a-launchdaemon).
+See [Kanata’s setup guide](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md#6-optional-install-as-a-launchdaemon).
 
 </details>
 
