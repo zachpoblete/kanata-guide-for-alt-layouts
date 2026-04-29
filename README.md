@@ -9,7 +9,7 @@ This guide shows you how to set up an alternate layout with Kanata, edit the lay
 <details>
 <summary><strong>Windows</strong></summary>
 
-1. Download Kanata.
+1. Download Kanata:
 
     - Most people should download the [`x64` version](https://github.com/jtroo/kanata/releases/latest/download/windows-binaries-x64.zip).
     - If you’re using Windows on ARM, download the [`arm64` version](https://github.com/jtroo/kanata/releases/download/v1.11.0/windows-binaries-arm64.zip).
@@ -57,15 +57,10 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
     - If you don’t know how: Right-click an empty space inside the folder and select **Open in Terminal**.
 
-1. Make Kanata runnable:
-
-    ```shell
-    chmod +x kanata_linux_cmd_allowed_x64
-    ```
-
 1. Run Kanata:
 
     ```shell
+    chmod +x kanata_linux_cmd_allowed_x64  # Make Kanata runnable.
     sudo ./kanata_linux_cmd_allowed_x64 --cfg example.kbd
     ```
 
@@ -99,15 +94,10 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
     - If that option doesn’t appear: Go to **Finder → Services → Services Settings... → Files and Folders** and enable **New Terminal at Folder**.
 
-1. Make Kanata runnable:
-
-    ```shell
-    chmod +x kanata
-    ```
-
 1. Run Kanata:
 
     ```shell
+    chmod +x kanata_macos_cmd_allowed_x64  # Make Kanata runnable.
     sudo ./kanata_macos_cmd_allowed_x64 --cfg example.kbd
     ```
 
@@ -150,7 +140,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
     - Most people should download the [`arm64` version](https://github.com/jtroo/kanata/releases/download/v1.7.0/kanata_macos_cmd_allowed_arm64).
     - If you’re using an Intel Mac, download the [`x86_64` version](https://github.com/jtroo/kanata/releases/download/v1.7.0/kanata_macos_cmd_allowed_x86_64).
 
-1. Open **System Settings → Privacy & Security → Input Monitoring** and add the Kanata executable (`kanata_macos_cmd_allowed_...`).
+1. Open **System Settings → Privacy & Security → Input Monitoring** and add the Kanata executable (looks like `kanata_macos_cmd_allowed_...` from the Kanata folder).
 
 1. Open **System Settings → Privacy & Security → Accessibility** and add the Kanata executable.
 
@@ -166,14 +156,14 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
     **arm64**
 
     ```shell
-    chmod +x ./kanata_macos_cmd_allowed_arm64  # Make Kanata runnable.
+    chmod +x kanata_macos_cmd_allowed_arm64  # Make Kanata runnable.
     sudo ./kanata_macos_cmd_allowed_arm64 --cfg example.kbd
     ```
 
     **x64**
 
     ```shell
-    chmod +x ./kanata_macos_cmd_allowed_x64  # Make Kanata runnable.
+    chmod +x kanata_macos_cmd_allowed_x64  # Make Kanata runnable.
     sudo ./kanata_macos_cmd_allowed_x64 --cfg example.kbd
     ```
 
@@ -208,14 +198,14 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
     You should see `org.pqrs.service.daemon.Karabiner-VirtualHIDDevice-Daemon` listed.
 
-1. Download Kanata.
+1. Download Kanata:
 
     - Most people should download the [`arm64` version](https://github.com/jtroo/kanata/releases/latest/download/macos-binaries-arm64.zip).
     - If you’re using an Intel Mac, download the [`x64` version](https://github.com/jtroo/kanata/releases/latest/download/macos-binaries-x64.zip).
 
 1. Extract the downloaded zip file.
 
-1. Open **System Settings → Privacy & Security → Input Monitoring** and add the Kanata executable (`kanata_macos_cmd_allowed_...`).
+1. Open **System Settings → Privacy & Security → Input Monitoring** and add the Kanata executable (looks like `kanata_macos_cmd_allowed_...` from the Kanata folder).
 
 1. Open **System Settings → Privacy & Security → Accessibility** and add the Kanata executable.
 
@@ -231,14 +221,14 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
     **arm64**
 
     ```shell
-    chmod +x ./kanata_macos_cmd_allowed_arm64  # Make Kanata runnable.
+    chmod +x kanata_macos_cmd_allowed_arm64  # Make Kanata runnable.
     sudo ./kanata_macos_cmd_allowed_arm64 --cfg example.kbd
     ```
 
     **x64**
 
     ```shell
-    chmod +x ./kanata_macos_cmd_allowed_x64  # Make Kanata runnable.
+    chmod +x kanata_macos_cmd_allowed_x64  # Make Kanata runnable.
     sudo ./kanata_macos_cmd_allowed_x64 --cfg example.kbd
     ```
 
