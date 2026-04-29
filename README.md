@@ -37,7 +37,7 @@ This guide shows you how to set up an alternate layout with Kanata, edit the lay
     .\kanata_windows_gui_winIOv2_cmd_allowed_arm64.exe --cfg example.kbd
     ```
 
-Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Press `Q`&thinsp;—&thinsp;you’ll now get `B`. Type a few more letters!
+Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Press `Q`&thinsp;—&thinsp;you’ll now get `B`. Type other letters!
 
 Stop Kanata by holding: `Left Control + Space + Escape`.
 
@@ -64,7 +64,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
     sudo ./kanata_linux_cmd_allowed_x64 --cfg example.kbd
     ```
 
-Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Press `Q`&thinsp;—&thinsp;you’ll now get `B`. Type a few more letters!
+Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Press `Q`&thinsp;—&thinsp;you’ll now get `B`. Type other letters!
 
 Stop Kanata by holding: `Left Control + Space + Escape`.
 
@@ -100,7 +100,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
     sudo ./kanata_macos_cmd_allowed_x64 --cfg example.kbd
     ```
 
-Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Press `Q`&thinsp;—&thinsp;you’ll now get `B`. Type a few more letters!
+Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Press `Q`&thinsp;—&thinsp;you’ll now get `B`. Type other letters!
 
 Stop Kanata by holding: `Left Control + Space + Escape`.
 
@@ -167,7 +167,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
     sudo ./kanata_macos_cmd_allowed_x64 --cfg example.kbd
     ```
 
-Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Press `Q`&thinsp;—&thinsp;you’ll now get `B`. Type a few more letters!
+Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Press `Q`&thinsp;—&thinsp;you’ll now get `B`. Type other letters!
 
 Stop Kanata by holding: `Left Control + Space + Escape`.
 
@@ -233,7 +233,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
     sudo ./kanata_macos_cmd_allowed_x64 --cfg example.kbd
     ```
 
-Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Press `Q`&thinsp;—&thinsp;you’ll now get `B`. Type a few more letters!
+Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Press `Q`&thinsp;—&thinsp;you’ll now get `B`. Type other letters!
 
 Stop Kanata by holding: `Left Control + Space + Escape`.
 
