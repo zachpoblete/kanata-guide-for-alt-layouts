@@ -36,11 +36,11 @@ This guide shows you how to set up an alternate layout with Kanata, edit the lay
     .\kanata_windows_gui_winIOv2_cmd_allowed_arm64.exe --cfg example.kbd
     ```
 
-Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Type a few letters!
+Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite).
+
+Press `Q`&thinsp;—&thinsp;you’ll now get `b`. Type a few other letters!
 
 Stop Kanata by holding: `Left Control + Space + Escape`.
-
-**Troubleshooting:** See the known [platform (and hardware) issues](https://github.com/jtroo/kanata/blob/main/docs/platform-known-issues.adoc).
 
 </details>
 
@@ -64,11 +64,11 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
     sudo ./kanata_linux_cmd_allowed_x64 --cfg example.kbd
     ```
 
-Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Type a few letters!
+Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite).
+
+Press `Q`&thinsp;—&thinsp;you’ll now get `b`. Type a few other letters!
 
 Stop Kanata by holding: `Left Control + Space + Escape`.
-
-**Troubleshooting:** See the known [platform (and hardware) issues](https://github.com/jtroo/kanata/blob/main/docs/platform-known-issues.adoc).
 
 </details>
 
@@ -82,7 +82,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 1. Download [Kanata](https://github.com/jtroo/kanata/releases/latest/download/macos-binaries-x64.zip).
 
-    - *Note: This is the latest version.*
+    - Note: This is the latest version.
 
 1. Extract the downloaded zip file.
 
@@ -101,7 +101,9 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
     sudo ./kanata_macos_cmd_allowed_x64 --cfg example.kbd
     ```
 
-Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Type a few letters!
+Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite).
+
+Press `Q`&thinsp;—&thinsp;you’ll now get `b`. Type a few other letters!
 
 Stop Kanata by holding: `Left Control + Space + Escape`.
 
@@ -167,7 +169,9 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
     sudo ./kanata_macos_cmd_allowed_x64 --cfg example.kbd
     ```
 
-Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Type a few letters!
+Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite).
+
+Press `Q`&thinsp;—&thinsp;you’ll now get `b`. Type a few other letters!
 
 Stop Kanata by holding: `Left Control + Space + Escape`.
 
@@ -232,7 +236,9 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
     sudo ./kanata_macos_cmd_allowed_x64 --cfg example.kbd
     ```
 
-Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Type a few letters!
+Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite).
+
+Press `Q`&thinsp;—&thinsp;you’ll now get `b`. Type a few other letters!
 
 Stop Kanata by holding: `Left Control + Space + Escape`.
 
@@ -279,7 +285,7 @@ Replace the contents of `example.kbd` with this, then run Kanata again:
 )
 ```
 
-You’re using the [Sturdy layout](https://layouts.wiki/guides/start/recommendations/#sturdy). Press `Q` on your keyboard&thinsp;—&thinsp;you’ll now get `v` (instead of `b` on Gallium).
+You’re using the [Sturdy layout](https://layouts.wiki/guides/start/recommendations/#sturdy). Press `Q` on your keyboard&thinsp;—&thinsp;you’ll now get `v`.
 
 Using a different layout is just a matter of editing the keys in `deflayer` (and renaming the layer to match).
 
