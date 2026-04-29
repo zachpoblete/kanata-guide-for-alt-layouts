@@ -306,7 +306,7 @@ What follows is a manual method, but it reliably lets you use your alt layout im
 
 1. Open the shortcut’s properties.
 
-1. Edit the **Target** by appending `--cfg "path\to\example.kbd" --nodelay`. The full target should look like:
+1. Edit **Target** by appending `--cfg "path\to\example.kbd" --nodelay`. The full target should look like:
 
     ```
     "path\to\kanata.exe" --cfg "path\to\example.kbd" --nodelay
