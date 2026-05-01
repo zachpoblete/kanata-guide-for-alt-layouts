@@ -37,7 +37,7 @@ This guide shows you how to set up an alternate layout with Kanata, edit the lay
     .\kanata_windows_gui_winIOv2_cmd_allowed_arm64.exe --cfg example.kbd
     ```
 
-Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Press your `q` key&thinsp;—&thinsp;its output is now `b`. Try other letters!
+Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Press your `q` key&thinsp;&mdash;&thinsp;its output is now `b`. Try other letters!
 
 Stop Kanata by holding: `Left Control + Space + Escape`.
 
@@ -64,7 +64,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
     sudo ./kanata_linux_cmd_allowed_x64 --cfg example.kbd
     ```
 
-Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Press your `q` key&thinsp;—&thinsp;its output is now `b`. Try other letters!
+Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Press your `q` key&thinsp;&mdash;&thinsp;its output is now `b`. Try other letters!
 
 Stop Kanata by holding: `Left Control + Space + Escape`.
 
@@ -100,7 +100,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
     sudo ./kanata_macos_cmd_allowed_x64 --cfg example.kbd
     ```
 
-Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Press your `q` key&thinsp;—&thinsp;its output is now `b`. Try other letters!
+Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Press your `q` key&thinsp;&mdash;&thinsp;its output is now `b`. Try other letters!
 
 Stop Kanata by holding: `Left Control + Space + Escape`.
 
@@ -167,7 +167,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
     sudo ./kanata_macos_cmd_allowed_x64 --cfg example.kbd
     ```
 
-Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Press your `q` key&thinsp;—&thinsp;its output is now `b`. Try other letters!
+Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Press your `q` key&thinsp;&mdash;&thinsp;its output is now `b`. Try other letters!
 
 Stop Kanata by holding: `Left Control + Space + Escape`.
 
@@ -233,7 +233,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
     sudo ./kanata_macos_cmd_allowed_x64 --cfg example.kbd
     ```
 
-Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Press your `q` key&thinsp;—&thinsp;its output is now `b`. Try other letters!
+Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/start/recommendations/#gallium-and-graphite). Press your `q` key&thinsp;&mdash;&thinsp;its output is now `b`. Try other letters!
 
 Stop Kanata by holding: `Left Control + Space + Escape`.
 
@@ -280,7 +280,7 @@ Replace the contents of `example.kbd` with this, then run Kanata again:
 )
 ```
 
-You’re using the [Sturdy layout](https://layouts.wiki/guides/start/recommendations/#sturdy). Press your `q` key&thinsp;—&thinsp;its output is now `v`.
+You’re using the [Sturdy layout](https://layouts.wiki/guides/start/recommendations/#sturdy). Press your `q` key&thinsp;&mdash;&thinsp;its output is now `v`.
 
 Using a different layout is just a matter of editing the keys in `deflayer` (and renaming the layer to match).
 
@@ -346,7 +346,7 @@ See [Kanata’s setup guide](https://github.com/jtroo/kanata/blob/main/docs/setu
 - [`afterburner.kbd`](layouts/afterburner.kbd)
     - A layout that uses a skip magic key
 
-## Additional resources
+## See also
 
 - [vscode-kanata](https://github.com/rszyma/vscode-kanata)
     - A VS Code extension that adds language support for Kanata config files
