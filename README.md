@@ -6,6 +6,10 @@ This guide shows you how to set up an alternate layout with Kanata, edit the lay
 
 ## Set up a layout with Kanata
 
+<!----------------------------------------------------------------------------->
+<!-- Windows -->
+<!----------------------------------------------------------------------------->
+
 <details>
 <summary><strong>Windows</strong></summary>
 <p></p>
@@ -43,6 +47,10 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 </details>
 
+<!----------------------------------------------------------------------------->
+<!-- Linux -->
+<!----------------------------------------------------------------------------->
+
 <details>
 <summary><strong>Linux</strong></summary>
 <p></p>
@@ -69,6 +77,10 @@ Your keyboard is now using the [Gallium layout](https://layouts.wiki/guides/star
 Stop Kanata by holding: `Left Control + Space + Escape`.
 
 </details>
+
+<!----------------------------------------------------------------------------->
+<!-- macOS 10 and older -->
+<!----------------------------------------------------------------------------->
 
 <details>
 <summary><strong>macOS 10 and older</strong></summary>
@@ -107,6 +119,10 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 **Troubleshooting:** See [Kanata’s setup guide](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md#8-troubleshooting).
 
 </details>
+
+<!----------------------------------------------------------------------------->
+<!-- macOS 11 and 12 -->
+<!----------------------------------------------------------------------------->
 
 <details>
 <summary><strong>macOS 11 and 12</strong></summary>
@@ -174,6 +190,10 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 **Troubleshooting:** See [Kanata’s setup guide](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md#8-troubleshooting).
 
 </details>
+
+<!----------------------------------------------------------------------------->
+<!-- macOS 13 and newer -->
+<!----------------------------------------------------------------------------->
 
 <details>
 <summary><strong>macOS 13 and newer</strong></summary>
@@ -289,6 +309,10 @@ Using a different layout is just a matter of editing the keys in `deflayer` (and
 
 ## Run Kanata on startup
 
+<!----------------------------------------------------------------------------->
+<!-- Windows -->
+<!----------------------------------------------------------------------------->
+
 <details>
 <summary><strong>Windows</strong></summary>
 <p></p>
@@ -314,6 +338,10 @@ This is a manual method, but it reliably lets you use your alt layout immediatel
 
 </details>
 
+<!----------------------------------------------------------------------------->
+<!-- Linux -->
+<!----------------------------------------------------------------------------->
+
 <details>
 <summary><strong>Linux</strong></summary>
 <p></p>
@@ -321,6 +349,10 @@ This is a manual method, but it reliably lets you use your alt layout immediatel
 See the [Linux discussion (reply in thread)](https://github.com/jtroo/kanata/discussions/130#discussioncomment-10227272).
 
 </details>
+
+<!----------------------------------------------------------------------------->
+<!-- macOS -->
+<!----------------------------------------------------------------------------->
 
 <details>
 <summary><strong>macOS</strong></summary>
