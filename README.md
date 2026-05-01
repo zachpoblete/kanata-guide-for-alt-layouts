@@ -8,7 +8,6 @@ This guide shows you how to set up an alternate layout with Kanata, edit the lay
 
 <details>
 <summary><strong>Windows</strong></summary>
-<p></p>
 
 1.  Download Kanata:
 
@@ -45,7 +44,6 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 <details>
 <summary><strong>Linux</strong></summary>
-<p></p>
 
 1.  Download [Kanata](https://github.com/jtroo/kanata/releases/latest/download/linux-binaries-x64.zip).
 
@@ -72,7 +70,7 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 <details>
 <summary><strong>macOS 10 and older</strong></summary>
-<p></p>
+<div style="margin-top: 0.75em;">
 
 > **⚠️ Warning:**
 > It is unclear whether the latest version of Kanata works with macOS 10 and older. Support for macOS 10 was added to Kanata in [v1.6.0](https://github.com/jtroo/kanata/releases/tag/v1.6.0), so you may need to start there. Kanata has been reported to [work in macOS Catalina (v10.15)](https://github.com/jtroo/kanata/issues/676#issuecomment-1868389437).
@@ -106,11 +104,12 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 **Troubleshooting:** See [Kanata’s setup guide](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md#8-troubleshooting).
 
+</div>
 </details>
 
 <details>
 <summary><strong>macOS 11 and 12</strong></summary>
-<p></p>
+<div style="margin-top: 0.75em;">
 
 > **⚠️ Warning:**
 > There was a report of Kanata [not working on macOS 11](https://github.com/jtroo/kanata/discussions/1242). (Presumably, the user was using Kanata v1.6.1 at the time.) Ben Vallack was able to [run Kanata on macOS 12](https://www.youtube.com/watch?v=4yiMbP_ZySQ&t=1m23s).
@@ -173,11 +172,11 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 **Troubleshooting:** See [Kanata’s setup guide](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md#8-troubleshooting).
 
+</div>
 </details>
 
 <details>
 <summary><strong>macOS 13 and newer</strong></summary>
-<p></p>
 
 1.  Download the [Karabiner driver (v6.2.0)](https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice/releases/download/v6.2.0/Karabiner-DriverKit-VirtualHIDDevice-6.2.0.pkg) and run the installer.
 
@@ -291,7 +290,7 @@ Using a different layout is just a matter of editing the keys in `deflayer` (and
 
 <details>
 <summary><strong>Windows</strong></summary>
-<p></p>
+<div style="margin-top: 0.75em;">
 
 > **💡 Tip:**
 > See the [Windows discussion](https://github.com/jtroo/kanata/discussions/193).
@@ -312,22 +311,25 @@ This is a manual method, but it reliably lets you use your alt layout immediatel
 
 1.  Double click the shortcut after signing in.
 
+</div>
 </details>
 
 <details>
 <summary><strong>Linux</strong></summary>
-<p></p>
+<div style="margin-top: 0.6rem;">
 
 See the [Linux discussion (reply in thread)](https://github.com/jtroo/kanata/discussions/130#discussioncomment-10227272).
 
+</div>
 </details>
 
 <details>
 <summary><strong>macOS</strong></summary>
-<p></p>
+<div style="margin-top: 0.6em;">
 
 See [Kanata’s setup guide](https://github.com/jtroo/kanata/blob/main/docs/setup-macos.md#6-optional-install-as-a-launchdaemon).
 
+</div>
 </details>
 
 ## Other example configs
