@@ -87,42 +87,53 @@
 )
 
 ;; Here's the naive approach to the magic template:
+
 #|
-(deftemplate magic (input-key recency output-key)
+(deftemplate magic (input-key recency action)
   ((key-history $input-key $recency))
-    (if-equal $output-key rpt $input-key)
-    (if-not-equal $output-key rpt $output-key)
+    (if-equal $action rpt
+      ;; Output key = $input-key:
+      $input-key
+    )
+    (if-not-equal $action rpt
+      ;; Output key = $action:
+      $action
+    )
     break
 )
 |#
-;; The problem is that if the key to skip-magic is still down, the skip magic
-;; won't work. For example, following the skip magic rules: typing `no$e` should
-;; output "none", but if the `n` key were still held down while pressing the `$`
-;; key, then the second "n" wouldn't be outputted, and the actual output would
-;; be "noe".
 
-;; The magic template below fixes this by releasing the key to skip-magic if
-;; it's still down. The built-in `rpt` action actually already releases the key to
-;; repeat if it's still down, so we're just doing it manually for skip magic.
+;; Following the skip magic rules, typing `no$e` should output "none". But with
+;; the naive approach, if the `n` key were still held down while pressing the
+;; `$` key, then the second "n" wouldn't be outputted and the actual output
+;; would be "noe". The general problem is that if the output key of a magic rule
+;; is still down, the key won't be outputted.
 
-(deftemplate magic (input-key recency output-key)
+;; The magic template below fixes this by releasing the output key of the magic
+;; rule before pressing the output key. The built-in `rpt` action actually
+;; already releases the key to repeat if it's still down, so we're just doing it
+;; manually for magic.
+
+(deftemplate magic (input-key recency action)
   ((key-history $input-key $recency))
-    (if-equal $output-key rpt
+    (if-equal $action rpt
+      ;; Output key = $input-key:
       (switch
         ($input-key) (multi
           (release-key $input-key)
-          (macro 5 $input-key)  ;; The delay of 5 is needed for this to work properly.
+          (macro $input-key)  ;; For some reason, we need to use the macro action to actually output $input-key.
         ) break
         () $input-key break
       )
     )
-    (if-not-equal $output-key rpt
+    (if-not-equal $action rpt
+      ;; Output key = $action:
       (switch
-        ($output-key) (multi
-          (release-key $output-key)
-          (macro 5 $output-key)
+        ($action) (multi
+          (release-key $action)
+          (macro $action)  ;; For some reason, we need to use the macro action to actually output $action.
         ) break
-        () $output-key break
+        () $action break
       )
     )
     break
