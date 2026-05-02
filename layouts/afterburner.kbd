@@ -1,5 +1,9 @@
 ;; Blog post: https://blog.simn.me/posts/2025/afterburner/
 
+(defcfg
+  process-unmapped-keys yes  ;; So that repeat rules work for unmapped keys
+)
+
 (defsrc
         q  w  e  r  t    y  u  i  o  p
   caps  a  s  d  f  g    h  j  k  l  ;  '
