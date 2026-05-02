@@ -8,7 +8,7 @@ This guide shows you how to set up an alternate layout with Kanata, edit the lay
 
 <!----------------------------------------------------------------------------->
 <!-- Windows -->
-<!----------------------------------------------------------------------------->
+
 
 <details>
 <summary><strong>Windows</strong></summary>
@@ -49,7 +49,6 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 <!----------------------------------------------------------------------------->
 <!-- Linux -->
-<!----------------------------------------------------------------------------->
 
 <details>
 <summary><strong>Linux</strong></summary>
@@ -80,7 +79,6 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 <!----------------------------------------------------------------------------->
 <!-- macOS 10 and older -->
-<!----------------------------------------------------------------------------->
 
 <details>
 <summary><strong>macOS 10 and older</strong></summary>
@@ -122,7 +120,6 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 <!----------------------------------------------------------------------------->
 <!-- macOS 11 and 12 -->
-<!----------------------------------------------------------------------------->
 
 <details>
 <summary><strong>macOS 11 and 12</strong></summary>
@@ -193,7 +190,6 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 
 <!----------------------------------------------------------------------------->
 <!-- macOS 13 and newer -->
-<!----------------------------------------------------------------------------->
 
 <details>
 <summary><strong>macOS 13 and newer</strong></summary>
@@ -311,7 +307,6 @@ Using a different layout is just a matter of editing the keys in `deflayer` (and
 
 <!----------------------------------------------------------------------------->
 <!-- Windows -->
-<!----------------------------------------------------------------------------->
 
 <details>
 <summary><strong>Windows</strong></summary>
@@ -340,7 +335,6 @@ This is a manual method, but it reliably lets you use your alt layout immediatel
 
 <!----------------------------------------------------------------------------->
 <!-- Linux -->
-<!----------------------------------------------------------------------------->
 
 <details>
 <summary><strong>Linux</strong></summary>
@@ -352,7 +346,6 @@ See the [Linux discussion (reply in thread)](https://github.com/jtroo/kanata/dis
 
 <!----------------------------------------------------------------------------->
 <!-- macOS -->
-<!----------------------------------------------------------------------------->
 
 <details>
 <summary><strong>macOS</strong></summary>
