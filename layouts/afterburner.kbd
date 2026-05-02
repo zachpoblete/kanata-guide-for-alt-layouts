@@ -23,8 +23,6 @@
   $-defsrc-key j
 )
 
-;; The `#-base` and `$-base` aliases exist to serve the `#` and `$` aliases that
-;; implement the magic and skip magic interactions described in the blog post.
 (defalias
   #-base (switch
     (t! magic a 1 o)
@@ -70,74 +68,68 @@
     (t! magic ; 2 e)
     (t! magic ' 2 rpt)
 
-    ;; Since there's no built-in skip-repeat action, we can't do "Else
-    ;; skip-repeat". If you want skip-repeat for the rest of the keys on your
-    ;; keyboard, add repeat cases for them following the format above.
+    ;; If you want skip-repeat for the rest of the keys on your keyboard,
+    ;; add `rpt` cases for them following the format above. (I haven’t
+    ;; found a way to do “Else skip-repeat”, unfortunately.)
   )
 )
 
-;; The code below implements the magic and skip magic key interactions such as:
-;; - Typing `ru$#` outputs "rule" (using middle finger for `$` to avoid the SFB)
-;; - Typing `is#u$` outputs "issue"
 (defalias
   # (switch
-      ((input-history real $$-defsrc-key 2)) @$-base break
-      () @#-base break
+    ;; If the previous key pressed was `$`, then repeat the skip magic rule:
+    ((input-history real $$-defsrc-key 2)) @$-base break
+
+    () @#-base break
   )
+
   $ (switch
-      ((input-history real $#-defsrc-key 3)) @#-base break
-      () @$-base break
+    ;; If the second-to-last key pressed was `#`, then skip-repeat the magic rule:
+    ((input-history real $#-defsrc-key 3)) @#-base break
+
+    () @$-base break
   )
 )
 
-;; Here's the naive approach to the magic template:
+
+;; Here’s the naive approach to the magic template:
 
 #|
 (deftemplate magic (input-key recency action)
   ((key-history $input-key $recency))
     (if-equal $action rpt
-      ;; Output key = $input-key:
       $input-key
     )
     (if-not-equal $action rpt
-      ;; Output key = $action:
       $action
     )
     break
 )
 |#
 
-;; Following the skip magic rules, typing `no$e` should output "none". But with
-;; the naive approach, if the `n` key were still held down while pressing the
-;; `$` key, then the second "n" wouldn't be outputted and the actual output
-;; would be "noe". The general problem is that if the output key of a magic rule
-;; is still down, the key won't be outputted.
+;; Following the skip magic rules, typing `no$e` should output "none".
+;; But with the naive approach, if the user were still holding down
+;; `n` when they pressed `$`, then the second "n" wouldn’t be
+;; outputted and the actual output would be "noe". The problem seems
+;; to be that you can’t output a key that is still being held down.
 
-;; The magic template below fixes this by releasing the output key of the magic
-;; rule before pressing the output key. The built-in `rpt` action actually
-;; already releases the key to repeat if it's still down, so we're just doing it
-;; manually for magic.
+;; The magic template below fixes this by *releasing* the output key
+;; before pressing it:
+
+;; (The built-in `rpt` action already releases the key to repeat if
+;; it’s still down, so we’re just doing it manually for magic.)
 
 (deftemplate magic (input-key recency action)
   ((key-history $input-key $recency))
     (if-equal $action rpt
-      ;; Output key = $input-key:
-      (switch
-        ($input-key) (multi
-          (release-key $input-key)
-          (macro $input-key)  ;; For some reason, we need to use the macro action to actually output $input-key.
-        ) break
-        () $input-key break
+      (multi
+        (release-key $input-key)
+        (macro $input-key)  ;; For some reason, we need the macro action to output $input-key.
       )
     )
     (if-not-equal $action rpt
-      ;; Output key = $action:
-      (switch
-        ($action) (multi
-          (release-key $action)
-          (macro $action)  ;; For some reason, we need to use the macro action to actually output $action.
-        ) break
-        () $action break
+      (multi
+        (release-key $action)  ;; This assumes $action is a single key.
+        (macro $action)  ;; For some reason, we need the macro action to output $action.
       )
     )
     break
