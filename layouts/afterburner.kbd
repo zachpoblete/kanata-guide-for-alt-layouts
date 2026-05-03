@@ -97,11 +97,9 @@
 (deftemplate magic (input-key recency action)
   ((key-history $input-key $recency))
     (if-equal $action rpt
-      $input-key
-    )
+      $input-key)
     (if-not-equal $action rpt
-      $action
-    )
+      $action)
     break
 )
 |#
@@ -123,14 +121,10 @@
     (if-equal $action rpt
       (multi
         (release-key $input-key)
-        (macro $input-key)  ;; For some reason, we need the macro action to output $input-key.
-      )
-    )
+        (macro $input-key)))  ;; For some reason, we need the macro action to output $input-key.
     (if-not-equal $action rpt
       (multi
         (release-key $action)  ;; This assumes $action is a single key.
-        (macro $action)  ;; For some reason, we need the macro action to output $action.
-      )
-    )
+        (macro $action)))  ;; For some reason, we need the macro action to output $action.
     break
 )
