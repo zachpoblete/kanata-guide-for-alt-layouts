@@ -31,7 +31,8 @@
     (t! magic u 1 e)
     (t! magic x 1 t)
     (t! magic y 1 h)
-    () rpt break)
+    () rpt break
+  )
 )
 
 (defalias $-base
