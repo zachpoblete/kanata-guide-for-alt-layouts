@@ -23,18 +23,19 @@
   $-defsrc-key j
 )
 
-(defalias
-  #-base (switch
+(defalias #-base
+  (switch
     (t! magic a 1 o)
     (t! magic g 1 s)
     (t! magic h 1 y)
     (t! magic u 1 e)
     (t! magic x 1 t)
     (t! magic y 1 h)
-    () rpt break
-  )
+    () rpt break)
+)
 
-  $-base (switch
+(defalias $-base
+  (switch
     (t! magic a 2 o)
     (t! magic b 2 n)
     (t! magic c 2 rpt)
@@ -74,15 +75,17 @@
   )
 )
 
-(defalias
-  # (switch
+(defalias #
+  (switch
     ;; If the previous key pressed was `$`, then repeat the skip magic rule:
     ((input-history real $$-defsrc-key 2)) @$-base break
 
     () @#-base break
   )
+)
 
-  $ (switch
+(defalias $
+  (switch
     ;; If the second-to-last key pressed was `#`, then skip-repeat the magic rule:
     ((input-history real $#-defsrc-key 3)) @#-base break
 
