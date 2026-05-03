@@ -84,8 +84,8 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 <summary><strong>macOS 10 and older</strong></summary>
 <p></p>
 
-> **⚠️ Warning:**
-> It is unclear whether the latest version of Kanata works with macOS 10 and older. Support for macOS 10 was added to Kanata in [v1.6.0](https://github.com/jtroo/kanata/releases/tag/v1.6.0), so you may need to start there. Kanata has been reported to [work in macOS Catalina (v10.15)](https://github.com/jtroo/kanata/issues/676#issuecomment-1868389437).
+>   **⚠️ Warning:**
+>   It is unclear whether the latest version of Kanata works with macOS 10 and older. Support for macOS 10 was added to Kanata in [v1.6.0](https://github.com/jtroo/kanata/releases/tag/v1.6.0), so you may need to start there. Kanata has been reported to [work in macOS Catalina (v10.15)](https://github.com/jtroo/kanata/issues/676#issuecomment-1868389437).
 
 1.  Install the [Karabiner kernel extension](https://github.com/pqrs-org/Karabiner-VirtualHIDDevice-archived) for macOS 10. The [Kmonad instructions](https://github.com/kmonad/kmonad/blob/master/doc/installation.md#macos) for installing the kernel extension (kext) may be helpful.
 
@@ -125,8 +125,8 @@ Stop Kanata by holding: `Left Control + Space + Escape`.
 <summary><strong>macOS 11 and 12</strong></summary>
 <p></p>
 
-> **⚠️ Warning:**
-> There was a report of Kanata [not working on macOS 11](https://github.com/jtroo/kanata/discussions/1242). (Presumably, the user was using Kanata v1.6.1 at the time.) Ben Vallack was able to [run Kanata on macOS 12](https://www.youtube.com/watch?v=4yiMbP_ZySQ&t=1m23s).
+>   **⚠️ Warning:**
+>   There was a report of Kanata [not working on macOS 11](https://github.com/jtroo/kanata/discussions/1242). (Presumably, the user was using Kanata v1.6.1 at the time.) Ben Vallack was able to [run Kanata on macOS 12](https://www.youtube.com/watch?v=4yiMbP_ZySQ&t=1m23s).
 
 1.  Download the [Karabiner driver (v3.1.0)](https://github.com/pqrs-org/Karabiner-DriverKit-VirtualHIDDevice/releases/download/v3.1.0/Karabiner-DriverKit-VirtualHIDDevice-3.1.0.pkg) and run the installer.
 
@@ -300,8 +300,8 @@ You’re using the [Sturdy layout](https://layouts.wiki/guides/start/recommendat
 
 Using a different layout is just a matter of editing the keys in `deflayer` (and renaming the layer to match).
 
-> [!TIP]
-> To quickly try new layouts, use the `!cmini view [layout]` command in the [Alt Keyboard Layouts Discord](https://discord.gg/4kVZu7uWdy). This returns a text version of the layout that you can copy into a Kanata config file.
+>   [!TIP]
+>   To quickly try new layouts, use the `!cmini view [layout]` command in the [Alt Keyboard Layouts Discord](https://discord.gg/4kVZu7uWdy). This returns a text version of the layout that you can copy into a Kanata config file.
 
 ## Run Kanata on startup
 
@@ -312,8 +312,8 @@ Using a different layout is just a matter of editing the keys in `deflayer` (and
 <summary><strong>Windows</strong></summary>
 <p></p>
 
-> **💡 Tip:**
-> See the [Windows discussion](https://github.com/jtroo/kanata/discussions/193).
+>   **💡 Tip:**
+>   See the [Windows discussion](https://github.com/jtroo/kanata/discussions/193).
 
 This is a manual method, but it reliably lets you use your alt layout immediately after signing in:
 
@@ -357,8 +357,8 @@ See [Kanata’s setup guide](https://github.com/jtroo/kanata/blob/main/docs/setu
 
 ## Other example configs
 
-> [!NOTE]
-> Learn more about any Kanata feature used below in the [Configuration Guide](https://jtroo.github.io/config.html).
+>   [!NOTE]
+>   Learn more about any Kanata feature used below in the [Configuration Guide](https://jtroo.github.io/config.html).
 
 -   [`gallium-with-qwerty-shortcuts.kbd`](layouts/gallium-with-qwerty-shortcuts.kbd)
     -   Makes holding `Control`, `Alt`, or `Super` temporarily switch to QWERTY
