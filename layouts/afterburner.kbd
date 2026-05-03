@@ -19,56 +19,56 @@
 )
 
 (defvar
-  #-defsrc-key h
-  $-defsrc-key j
+  magic-defsrc-key h
+  skip-magic-defsrc-key j
 )
 
-(defalias #-base
+(defalias magic
   (switch
-    (t! magic a 1 o)
-    (t! magic g 1 s)
-    (t! magic h 1 y)
-    (t! magic u 1 e)
-    (t! magic x 1 t)
-    (t! magic y 1 h)
+    (t! magic-rule a 1 o)
+    (t! magic-rule g 1 s)
+    (t! magic-rule h 1 y)
+    (t! magic-rule u 1 e)
+    (t! magic-rule x 1 t)
+    (t! magic-rule y 1 h)
     () rpt break
   )
 )
 
-(defalias $-base
+(defalias skip-magic
   (switch
-    (t! magic a 2 o)
-    (t! magic b 2 n)
-    (t! magic c 2 rpt)
-    (t! magic d 2 t)
-    (t! magic e 2 rpt)
-    (t! magic f 2 s)
-    (t! magic g 2 s)
-    (t! magic h 2 y)
-    (t! magic i 2 rpt)
-    (t! magic j 2 y)
-    (t! magic k 2 t)
-    (t! magic l 2 r)
-    (t! magic m 2 k)
-    (t! magic n 2 rpt)
-    (t! magic o 2 a)
-    (t! magic p 2 n)
-    (t! magic q 2 e)
-    (t! magic r 2 l)
-    (t! magic s 2 rpt)
-    (t! magic t 2 rpt)
-    (t! magic u 2 e)
-    (t! magic v 2 t)
-    (t! magic w 2 rpt)
-    (t! magic x 2 t)
-    (t! magic y 2 h)
-    (t! magic z 2 rpt)
-    (t! magic , 2 i)
-    (t! magic . 2 i)
-    (t! magic - 2 i)
-    (t! magic / 2 a)
-    (t! magic ; 2 e)
-    (t! magic ' 2 rpt)
+    (t! magic-rule a 2 o)
+    (t! magic-rule b 2 n)
+    (t! magic-rule c 2 rpt)
+    (t! magic-rule d 2 t)
+    (t! magic-rule e 2 rpt)
+    (t! magic-rule f 2 s)
+    (t! magic-rule g 2 s)
+    (t! magic-rule h 2 y)
+    (t! magic-rule i 2 rpt)
+    (t! magic-rule j 2 y)
+    (t! magic-rule k 2 t)
+    (t! magic-rule l 2 r)
+    (t! magic-rule m 2 k)
+    (t! magic-rule n 2 rpt)
+    (t! magic-rule o 2 a)
+    (t! magic-rule p 2 n)
+    (t! magic-rule q 2 e)
+    (t! magic-rule r 2 l)
+    (t! magic-rule s 2 rpt)
+    (t! magic-rule t 2 rpt)
+    (t! magic-rule u 2 e)
+    (t! magic-rule v 2 t)
+    (t! magic-rule w 2 rpt)
+    (t! magic-rule x 2 t)
+    (t! magic-rule y 2 h)
+    (t! magic-rule z 2 rpt)
+    (t! magic-rule , 2 i)
+    (t! magic-rule . 2 i)
+    (t! magic-rule - 2 i)
+    (t! magic-rule / 2 a)
+    (t! magic-rule ; 2 e)
+    (t! magic-rule ' 2 rpt)
 
     ;; If you want skip-repeat for the rest of the keys on your keyboard,
     ;; add `rpt` cases for them following the format above. (I haven’t
@@ -78,27 +78,26 @@
 
 (defalias #
   (switch
-    ;; If the previous key pressed was `$`, then repeat the skip magic rule:
-    ((input-history real $$-defsrc-key 2)) @$-base break
+    ;; If the previous key pressed was the skip magic key, repeat the skip magic rule:
+    ((input-history real $skip-magic-defsrc-key 2)) @skip-magic break
 
-    () @#-base break
+    () @magic break
   )
 )
 
 (defalias $
   (switch
-    ;; If the second-to-last key pressed was `#`, then skip-repeat the magic rule:
-    ((input-history real $#-defsrc-key 3)) @#-base break
+    ;; If the second-to-last key pressed was the magic key, skip-repeat the magic rule:
+    ((input-history real $magic-defsrc-key 3)) @magic break
 
-    () @$-base break
+    () @skip-magic break
   )
 )
 
-
-;; Here’s the naive approach to the magic template:
+;; Here’s the naive approach to the magic rule template:
 
 #|
-(deftemplate magic (input-key recency action)
+(deftemplate magic-rule (input-key recency action)
   ((key-history $input-key $recency))
     (if-equal $action rpt
       $input-key)
@@ -114,13 +113,13 @@
 ;; outputted and the actual output would be "noe". The problem seems
 ;; to be that you can’t output a key that is still being held down.
 
-;; The magic template below fixes this by *releasing* the output key
+;; The magic rule template below fixes this by *releasing* the output key
 ;; before pressing it:
 
 ;; (The built-in `rpt` action already releases the key to repeat if
 ;; it’s still down, so we’re just doing it manually for magic.)
 
-(deftemplate magic (input-key recency action)
+(deftemplate magic-rule (input-key recency action)
   ((key-history $input-key $recency))
     (if-equal $action rpt
       (multi
