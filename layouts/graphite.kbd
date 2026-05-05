@@ -1,19 +1,22 @@
 ;; GitHub repository: https://github.com/rdavison/graphite-layout
 
 (defsrc
-        q w e r t  y u i o p [ ]
+      ` 1 2 3 4 5  6 7 8 9 0 - =
+        q w e r t  y u i o p [ ] \
         a s d f g  h j k l ; '
    lsft z x c v b  n m , . / rsft
 )
 
 (deflayer graphite
-        b l d w z  ' f o u j ; =
+      ` 1 2 3 4 5  6 7 8 9 0 [ ]
+        b l d w z  ' f o u j ; = \
         n r t s g  y h a e i ,
   @lsft q x m c v  k p . - / @rsft
 )
 
 (deflayer graphite-shift
-        _ _ _ _ _  - _ _ _ _ _ _
+      _ _ _ _ _ _  _ _ _ _ _ _ _
+        _ _ _ _ _  - _ _ _ _ _ _ _
         _ _ _ _ _  _ _ _ _ _ /
       _ _ _ _ _ _  _ _ _ ' , _
 )
