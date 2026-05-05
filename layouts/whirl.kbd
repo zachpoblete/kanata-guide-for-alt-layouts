@@ -18,8 +18,8 @@
               @*
 )
 
-(defalias
-  * (switch
+(defalias *
+  (switch
     ((key-history w 1)) h break
     ((key-history y 1)) , break
     ((key-history u 1)) e break
