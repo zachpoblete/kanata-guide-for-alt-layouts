@@ -1,0 +1,66 @@
+;; GitHub repository: https://github.com/empressabyss/nordrassil
+
+(defcfg
+  process-unmapped-keys yes  ;; So that repeat rules work for unmapped keys
+)
+
+(defsrc
+  q w e r t   y u i o p
+  a s d f g   h j k l ; '
+  z x c v b   n m , . /
+   lalt spc   ralt rctl
+)
+
+;; This is the 2024 version of Nordrassil as the 2025 version does not have its
+;; magic rules specified.
+(deflayer nordrassil
+  q y o u -   j g n w k
+  h i e a .   p d r s l z
+  x / ' , ;   b c m f v
+    spc @L⟐   @R⟐ t
+)
+
+(defalias
+  * S-8
+  release-* (multi (release-key 8) (release-key lsft))
+)
+
+(defvar previous-key-is-*
+  (and
+    (key-history 8 1)
+    (or (key-history lsft 2) (key-history rsft 2))
+  )
+)
+
+(defalias L⟐
+  (switch
+    ((key-history b 1)) (macro e c a u s e)     break
+    ((key-history c 1)) (macro a n)             break
+    ((key-history g 1)) (macro e n e r a l)     break
+    ((key-history j 1)) (macro u s t)           break
+    ((key-history m 1)) (macro e n t)           break
+    ((key-history n 1)) (macro i o n)           break
+    ((key-history p 1)) (macro r e t t y)       break
+    ((key-history v 1)) (macro a z j o r f i a) break
+    ((key-history w 1)) (macro h i c h)         break
+    ((key-history , 1)) (macro ␣ a n d)         break
+    () rpt break
+  )
+)
+
+(defalias R⟐
+  (switch
+    ((key-history a 1))   (macro n d)     break
+    ((key-history i 1))   (macro o n)     break
+    ((key-history q 1))   (macro u e e n) break
+    ((key-history x 1))   (macro e x)     break
+    ((key-history y 1))   (macro e a h)   break
+    ((key-history , 1))   (macro ␣ b u t) break
+    ((key-history spc 1)) (macro t h e)   break
+    ($previous-key-is-*) (multi
+      @release-*
+      ;; Send "*N**or**dr**as**s**i**l**":
+      (macro @* S-n @* @* o r @* @* d r @* @* a s @* @* s @* @* i @* @* l @* @*)) break
+    () rpt break
+  )
+)

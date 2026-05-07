@@ -370,6 +370,8 @@ See [Kanata’s setup guide](https://github.com/jtroo/kanata/blob/main/docs/setu
     -   A layout that uses a [magic key](https://layouts.wiki/reference/terminology/magic/)
 -   [`afterburner.kbd`](layouts/afterburner.kbd)
     -   A layout that uses a skip magic key
+-   [`nordrassil.kbd`](layouts/nordrassil.kbd)
+    -   A layout that uses chiral magic keys
 
 ## See also
 
