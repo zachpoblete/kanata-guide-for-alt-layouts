@@ -57,10 +57,11 @@
     ((key-history y 1))   (macro e a h)   break
     ((key-history , 1))   (macro ␣ b u t) break
     ((key-history spc 1)) (macro t h e)   break
-    ($previous-key-is-*) (multi
-      @release-*
-      ;; Send "*N**or**dr**as**s**i**l**":
-      (macro @* S-n @* @* o r @* @* d r @* @* a s @* @* s @* @* i @* @* l @* @*)) break
+    ($previous-key-is-*)
+      (multi
+        @release-*
+        ;; Send "*N**or**dr**as**s**i**l**":
+        (macro @* S-n @* @* o r @* @* d r @* @* a s @* @* s @* @* i @* @* l @* @*)) break
     () rpt break
   )
 )
